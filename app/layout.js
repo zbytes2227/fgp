@@ -1,0 +1,42 @@
+import { Inter } from "next/font/google";
+import NextTopLoader from "nextjs-toploader";
+import "./globals.css";
+import Head from "next/head";
+
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata = {
+  title: "Feroze Gandhi Polytechnic",
+  description: "Ujjwal - Zbytes",
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <Head>
+      <link rel="icon" href="/image/favicon.ico"/>
+      </Head>
+      <body className={inter.className}>
+        <NextTopLoader
+          color="#0088ff"
+          initialPosition={0.22}
+          crawlSpeed={300}
+          height={4}
+          crawl={true}
+          showSpinner={false}
+          easing="ease"
+          speed={200}
+        />
+        {children}
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(t,e){t.artibotApi={l:[],t:[],on:function(){this.l.push(arguments)},trigger:function(){this.t.push(arguments)}};var a=!1,i=e.createElement("script");i.async=!0,i.type="text/javascript",i.src="https://app.artibot.ai/loader.js",e.getElementsByTagName("head").item(0).appendChild(i),i.onreadystatechange=i.onload=function(){if(!(a||this.readyState&&"loaded"!=this.readyState&&"complete"!=this.readyState)){new window.ArtiBot({i:"35862967-a52a-4081-94d1-b20cac54d19d"});a=!0}}}(window,document);
+            `,
+          }}
+        />
+      </body>
+    </html>
+  );
+}
