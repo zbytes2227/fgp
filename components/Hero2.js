@@ -4,60 +4,22 @@ import NoticesCard from './NoticesCard'
 
 const Hero2 = () => {
   return (
-    <div className="container mx-auto border mt-6">
-    <div className="flex flex-col lg:flex-row p-2">
-     <NoticesCard/>
-      <div className="border-3 w-full lg:w-2/3">
-        <div className="flex lg:flex-row flex-col justify-around">
-          <div className="rounded-xl bg-white p-2 shadow-lg border w-full md:w-2/4 m-1">
-            <h4 class="block font-sans text-xl  antialiased text-center font-semibold leading-snug tracking-normal text-inherit mb-1">
-              Founder Desk
-            </h4>
-            <div className="flex items-center flex-col p-1 m-1">
-              <Image
-                src={"/fg.jpg"}
-                alt="gh"
-                className="rounded-md m-2 mx-auto"
-                height={100}
-                width={160}
-              />
-              <p className="p-2 text-center">
-                <strong>Feroze Gandhi</strong>
-                <br /> Member of the Indian Parliament <br />
-                12 September 1912
-                <br />
-                Indian National Congress
-              </p>
-            </div>
-          </div>
-
-          <div className="rounded-xl bg-white p-2 shadow-lg border w-full md:w-2/4 m-1">
-            <h4 class="block font-sans text-xl  antialiased text-center font-semibold leading-snug tracking-normal text-inherit mb-1">
-              Principal Desk
-            </h4>
-            <div className="flex items-center flex-col p-1 m-1">
-              <Image
-                src={"/principal.png"}
-                alt="gh"
-                className="rounded-md m-2 mx-auto"
-                height={100}
-                width={160}
-              />
-              <p className="p-2 text-center">
-                <strong>Vinod Dohre [Principal]</strong>
-                <br /> Feroze Gandhi Polytechnic <br />
-                98766857868
-                <br />
-                2019-Present
-                <br />
-                principal@fgp.org.in
-              </p>
-            </div>
-          </div>
-        </div>
+    <section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center">
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+      <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x400"/>
+    </div>
+    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-semibold text-gray-900">Principle Message
+      </h1>
+      <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bpour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+      <div class="flex justify-center">
+        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+        <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
       </div>
     </div>
   </div>
+</section>
   )
 }
 

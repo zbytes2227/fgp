@@ -6,16 +6,18 @@ import Hero from "@/components/Hero";
 import Hero2 from "@/components/Hero2";
 import HodCard from "@/components/HodCard";
 import Hods from "@/components/Hods";
-import { NavbarSimple } from "@/components/Navbar";
+import Navbar, { NavbarSimple } from "@/components/Navbar";
+import Objective from "@/components/Objective";
 import { Button } from "@material-tailwind/react";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-      <NavbarSimple />
+      <Navbar />
       <Hero />
       <Hero2 />
+      <Objective/>
       <Hods />
       <Features />
       <Footer/>

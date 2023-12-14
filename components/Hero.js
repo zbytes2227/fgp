@@ -1,13 +1,14 @@
 import React from "react";
 import { Carousel } from "@material-tailwind/react";
+import SpecialProfileBox from "./SpecialProfileBox";
 
 const Hero = () => {
   return (
     <div className="container mx-auto border">
-      <div className="flex flex-col lg:flex-row p-2">
-        <div className="border-3 h-[30vh] md:h-[40vh] w-full lg:w-2/3">
+      <div className="flex flex-col lg:flex-row">
+        <div className="h-[30vh] md:h-[50vh] w-full lg:w-2/3">
           <Carousel
-            className="rounded-lg"
+            className=""
             autoplay={true}
             loop={true}
             transition={{ duration: 1 }}
@@ -35,33 +36,30 @@ const Hero = () => {
           </Carousel>
         </div>
 
-        <div className="border-3 bg-blue-200 w-full lg:w-1/3 rounded-lg lg:ml-1 lg:mt-0 ml-0 mt-3 p-3">
-          <h4 class="block font-sans text-xl text-center antialiased font-semibold leading-snug tracking-normal text-inherit mb-2">
-            OUR DEPARTMENTS
-          </h4>
-          <p className="p-1 bg-white mb-1.5 rounded pl-3 hover:cursor-pointer hover:shadow-xl hover-outline">
-            <a href="/courses/mechanical">Mechanical Engineering</a>
-          </p>
-          <p className="p-1 bg-white mb-1.5 rounded pl-3 hover:cursor-pointer hover:shadow-xl hover-outline">
-            <a href="/courses/electronics">Electronics Engineering</a>
-          </p>
-          <p className="p-1 bg-white mb-1.5 rounded pl-3 hover:cursor-pointer hover:shadow-xl hover-outline">
-            <a href="/courses/cse">Computer Science & Engineering</a>
-          </p>
-          <p className="p-1 bg-white mb-1.5 rounded pl-3 hover:cursor-pointer hover:shadow-xl hover-outline">
-            <a href="/courses/it">Information Technology Engineering</a>
-          </p>
-          <p className="p-1 bg-white mb-1.5 rounded pl-3 hover:cursor-pointer hover:shadow-xl hover-outline">
-            <a href="/courses/mom">Modern Office Management</a>
-          </p>
-          <p className="p-1 bg-white mb-1.5 rounded pl-3 hover:cursor-pointer hover:shadow-xl hover-outline">
-            <a href="/courses/ic">Information & Control Engineering</a>
-          </p>
+        <div className="bg-indigo-500 w-full lg:w-1/3 lg:mt-0 ml-0 p-3 text-sm">
+          <SpecialProfileBox
+            name="Shri Yogi Adityanath"
+            post="Honble CM of Uttar Pradesh"
+            img="/2img88.png"
+          />
+          <SpecialProfileBox
+            name="Shri Yogi Adityanath"
+            post="Honble CM of Uttar Pradesh"
+            img="/2img88.png"
+          />
+          <SpecialProfileBox
+            name="Shri Yogi Adityanath"
+            post="Honble CM of Uttar Pradesh"
+            img="/2img88.png"
+          />
+          <SpecialProfileBox
+            name="Shri Yogi Adityanath"
+            post="Honble CM of Uttar Pradesh"
+            img="/2img88.png"
+          />
         </div>
       </div>
     </div>
-
-    
   );
 };
 
