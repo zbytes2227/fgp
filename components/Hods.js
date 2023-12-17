@@ -12,12 +12,13 @@ const Hods = () => {
     </div>
     <div class="flex flex-wrap justify-center -m-4">
   
-<CoursesCard/>
-<CoursesCard/>
-<CoursesCard/>
-<CoursesCard/>
-<CoursesCard/>
-<CoursesCard/>
+<CoursesCard type="Government" name="Mechanical Engineering" more_link="/courses/mechanical"/>
+<CoursesCard type="Government" name="Electronics Engineering" more_link="/courses/electronics"/>
+<CoursesCard type="Aided" name="Computer Science & Engineering" more_link="/courses/cse"/>
+<CoursesCard type="Aided" name="Information & Technology" more_link="/courses/it"/>
+<CoursesCard type="Aided" name="Instrumental Control" more_link="/courses/ic"/>
+<CoursesCard type="Aided" name="Modern Office Management" more_link="/courses/mom"/>
+
       
     </div>
   </div>

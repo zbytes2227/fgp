@@ -5,7 +5,7 @@ const NoticesCard = () => {
   const [notices, setNotices] = useState([]);
   const [Loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("/api/getNotice")
+    fetch("https://bteup.ac.in/InstituteContent/999/Content/LatestNewsContent.json")
       .then((response) => response.json())
       .then((data) => {
         if (data.success) {
@@ -22,10 +22,9 @@ const NoticesCard = () => {
 
   return (
     <>
-      <h4 className="block font-sans text-xl ml-3 font-semibold mb-2">
+      {/* <h4 className="block font-sans text-xl ml-3 font-semibold mb-2">
         Events & Notices
-      </h4>
-     <a href="/notices" className="bg-white rounded-md px-1.5 py-0.5 me-5">Show All</a> 
+      </h4> */}
 
 
       {/* <div className="border border-3"> */}
@@ -54,13 +53,17 @@ const NoticesCard = () => {
 
         {notices.map((notice) => (
           <a href={notice.link}
-          className="block bg-white font-medium p-1 py-1.5 mb-1 rounded-md pl-4 hover:shadow-lg hover:cursor-pointer"
+          className="block bg-white font-medium p-1 py-1.5 mb-1 border-b-2 rounded-md pl-4 hover:shadow-lg hover:cursor-pointer"
           key={notice.key}
           >
             {" "}
             👉{" "}{notice.title}
           </a>
         ))}
+
+</div>
+<div className="flex justify-end me-2">
+     <a href="/notices" className="bg-indigo-500 text-white rounded-md px-1.5 py-0.5 me-5">Show All</a> 
 </div>
         </>
   );
