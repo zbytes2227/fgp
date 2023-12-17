@@ -1,14 +1,14 @@
 "use client"
-import { NavbarSimple } from '@/components/Navbar'
 import React from 'react'
 import { Carousel } from "@material-tailwind/react";
 import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
 
 
 const page = () => {
   return (
     <>
-    <NavbarSimple/>
+    <Navbar/>
 
     <div className="border-3 h-[30vh] md:h-[40vh] w-full lg:w-2/3 mx-auto mt-3">
           <Carousel

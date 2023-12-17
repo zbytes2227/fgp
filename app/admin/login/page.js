@@ -1,5 +1,5 @@
 "use client";
-import { NavbarSimple } from "@/components/Navbar";
+import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
@@ -91,7 +91,7 @@ const Login = () => {
 
   return (
     <>
-      <NavbarSimple />
+      <Navbar />
       <section className="h-[100vh] dark:bg-white">
         <ToastContainer />
         <div className="flex flex-col sm:pt-6 items-center mt-5 justify-cnter px-6 mx-auto md:h-screen lg:py-0">

@@ -1,6 +1,6 @@
 "use client";
 import Footer from "@/components/Footer";
-import { NavbarSimple } from "@/components/Navbar";
+import Navbar from "@/components/Navbar";
 import React, { useEffect, useState } from "react";
 
 const AllNotices = () => {
@@ -25,7 +25,7 @@ const AllNotices = () => {
 
   return (
     <>
-      <NavbarSimple />
+      <Navbar />
 
       <div className="container mx-auto my-5 border border-2">
         <div class="relative">

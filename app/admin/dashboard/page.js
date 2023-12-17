@@ -3,9 +3,10 @@ import React, { useEffect, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { NavbarSimple } from "@/components/Navbar";
+
 import AdminNoticesCard from "@/components/AdminNoticeCard";
 import AdminNoticeForm from "@/components/AdminNoticeForm";
+import Navbar from "@/components/Navbar";
 
 const Dashboard = () => {
   const router = useRouter();
@@ -72,7 +73,7 @@ const Dashboard = () => {
     <>
       {ValidUser ? (
         <section>
-          <NavbarSimple />
+          <Navbar />
           <div className="mx-auto container">
             <div className="flex justify-between p-2 items-center">
               <div className="flex">

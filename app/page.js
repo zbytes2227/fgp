@@ -1,4 +1,5 @@
 "use client";
+import Events from "@/components/Events";
 import FeatureCard from "@/components/FeatureCard";
 import Features from "@/components/Features";
 import Footer from "@/components/Footer";
@@ -19,6 +20,7 @@ export default function Home() {
       <Hero2 />
       <Objective/>
       <Hods />
+      <Events/>
       <Features />
       <Footer/>
     </>

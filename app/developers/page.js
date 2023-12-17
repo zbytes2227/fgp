@@ -1,13 +1,13 @@
 
 import DeveloperCard from '@/components/DeveloperCard'
 import Footer from '@/components/Footer'
-import { NavbarSimple } from '@/components/Navbar'
+import Navbar from '@/components/Navbar'
 import React from 'react'
 
 const page = () => {
   return (
    <>
-   <NavbarSimple/>
+   <Navbar/>
 
 
     <section class="text-gray-600 body-font">

@@ -1,12 +1,12 @@
 "use client"
 import Footer from '@/components/Footer'
-import { NavbarSimple } from '@/components/Navbar'
+import Navbar from '@/components/Navbar'
 import React from 'react'
 
 const page = () => {
   return (
    <>
-   <NavbarSimple/>
+   <Navbar/>
    <section class="text-gray-600 body-font">
   <div class="container flex flex-wrap px-5 py-24 mx-auto items-center">
     <div class="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-200">
