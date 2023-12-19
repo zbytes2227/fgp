@@ -36,7 +36,7 @@ const Hero = () => {
           </Carousel>
         </div>
 
-        <div className="bg-indigo-500 w-full flex flex-col justify-between lg:w-1/3 lg:mt-0 ml-0 p-3 text-sm">
+        <div className="bg-indigo-500 w-full flex flex-col md:justify-between lg:justify-center lg:w-1/3 lg:mt-0 ml-0 p-3 text-sm">
           <SpecialProfileBox
             name="Shri Yogi Adityanath"
             post="Honble CM of Uttar Pradesh"
@@ -53,9 +53,9 @@ const Hero = () => {
             img="/1img88.png"
           />
           <SpecialProfileBox
-            name="Shri Yogi Adityanath"
-            post="Honble CM of Uttar Pradesh"
-            img="/2img88.png"
+            name="Late. Feroze Gandhi"
+            post="Politician, Member of the Lok Sabha"
+            img="/fg.jpg"
           />
         </div>
       </div>

@@ -5,24 +5,34 @@ import Features from "@/components/Features";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Hero2 from "@/components/Hero2";
-import HodCard from "@/components/HodCard";
 import Hods from "@/components/Hods";
 import Navbar, { NavbarSimple } from "@/components/Navbar";
 import Objective from "@/components/Objective";
-import { Button } from "@material-tailwind/react";
-import Image from "next/image";
+import { Fade } from "react-awesome-reveal";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <Hero2 />
-      <Objective/>
-      <Hods />
-      <Events/>
-      <Features />
-      <Footer/>
+      <Fade direction="up" triggerOnce="true">
+        <Hero />
+      </Fade>
+      <Fade direction="up" triggerOnce="true">
+        <Hero2 />
+      </Fade>
+      <Fade direction="up" triggerOnce="true">
+        <Objective />
+      </Fade>
+      <Fade direction="up" triggerOnce="true">
+        <Hods />
+      </Fade>
+      <Fade direction="up" triggerOnce="true">
+        <Events />
+      </Fade>
+      <Fade direction="up" triggerOnce="true">
+        <Features />
+      </Fade>
+      <Footer />
     </>
   );
 }

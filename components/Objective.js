@@ -1,4 +1,5 @@
 import React from "react";
+import NoticesCard from "./NoticesCard";
 
 const Objective = () => {
   return (
@@ -13,9 +14,11 @@ const Objective = () => {
       </div>
     </div>
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-full">
-     <div className="bg-white p-3 m-6 rounded-lg">
-     {/* <h4 class="title-font sm:text-4xl text-3xl mb-4 font-extrabold text-center ">Photo Gallery</h4> */}
-     <img src="/im4.jpeg"/>
+     <div className="bg-white p-3 rounded-lg">
+     {/* <h4 class="title-font sm:text-4xl text-3xl mb-4  font-extrabold text-center ">Photo Gallery</h4> */}
+     {/* <img src="/im4.jpeg"/> */}
+     <NoticesCard/>
+
      </div>
     </div>
   </div>

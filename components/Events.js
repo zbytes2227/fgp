@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import NoticesCard from './NoticesCard'
+import { Carousel } from '@material-tailwind/react'
 
 const Events = () => {
   return (
@@ -32,8 +33,25 @@ const Events = () => {
 
       <div class="lg:1/2 lg:w-full md:w-1/2 w-full">
        <div className="bg-white p-3 m-6 rounded-lg">
-       <h4 class="title-font sm:text-4xl text-3xl mb-4 font-extrabold text-center ">Photo Gallery</h4>
-       <NoticesCard/>
+       <h4 class="title-font sm:text-4xl text-2xl md:mb-4 mb-2 font-extrabold text-center ">Photo Gallery</h4>
+       <Carousel
+            className="md:h-80 h-50"
+            autoplay={true}
+            loop={true}
+            transition={{ duration: 1 }}
+          >
+            <img
+              src="https://dummyimage.com/900x480"
+              alt="image 1"
+              className="h-full w-full object-cover"
+            />  
+            <img
+            src="https://dummyimage.com/900x480"
+            alt="image 1"
+            className="h-full w-full object-cover"
+          />
+
+            </Carousel>
        </div>
       </div>
     </div>

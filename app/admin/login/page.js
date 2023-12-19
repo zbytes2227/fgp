@@ -116,7 +116,7 @@ const Login = () => {
                     type="text"
                     name="email"
                     id="email"
-                    className="bg-gray-50 border border-gray-300 outline-0  sm:text-sm rounded-lg focus:ring-red-600 focus:border-red-600 block w-full p-2.5"
+                    className="bg-gray-50 border border-gray-300 outline-0  sm:text-sm rounded-lg focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2.5"
                     placeholder="name@company.com"
                     required=""
                     value={email}
@@ -137,7 +137,7 @@ const Login = () => {
                     name="password"
                     id="password"
                     placeholder="••••••••"
-                    className="bg-gray-50 border border-gray-300 outline-0  sm:text-sm rounded-lg focus:ring-red-600 focus:border-red-600 block w-full p-2.5"
+                    className="bg-gray-50 border border-gray-300 outline-0  sm:text-sm rounded-lg focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2.5"
                     required=""
                     value={password}
                     onChange={(e) => {
@@ -148,8 +148,8 @@ const Login = () => {
 
                 <button
                   type="submit"
-                  className={`w-full bg-red-500 hover:bg-red-600 font-medium rounded-lg text-sm font-semibold uppercase text-white px-5 py-2.5 text-center ${
-                    Loading && "bg-red-200"
+                  className={`w-full bg-indigo-500 hover:bg-indigo-600 font-medium rounded-lg text-sm font-semibold uppercase text-white px-5 py-2.5 text-center ${
+                    Loading && "bg-indigo-200"
                   } `}
                 >
                   Sign in{" "}
