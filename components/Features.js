@@ -10,9 +10,7 @@ const Features = () => {
           Why Choose Us ?
         </h1>
         <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-          Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-          taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh
-          mi pug.
+        At our institution, we pride ourselves on offering a diverse range of technical courses to cater to different interests and career goals. 
         </p>
       </div>
       <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">

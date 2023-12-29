@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Hero2 from "@/components/Hero2";
 import Hods from "@/components/Hods";
+import MarqueeNews from "@/components/MarqueeNews";
 import Navbar, { NavbarSimple } from "@/components/Navbar";
 import Objective from "@/components/Objective";
 import { Fade } from "react-awesome-reveal";
@@ -14,6 +15,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <MarqueeNews/>
       <Fade direction="up" triggerOnce="true">
         <Hero />
       </Fade>

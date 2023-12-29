@@ -22,13 +22,13 @@ const NoticesCard = () => {
 
   return (
     <>
-      <div className="flex justify-between items-center me-2">
+      <div className="flex justify-between items-center">
         <h4 className="block font-sans text-2xl ml-3 font-semibold mb-2">
           Events & Notices
         </h4>
         <a
           href="/notices"
-          className="bg-indigo-500 text-white rounded-md px-1.5 py-0.5 me-5"
+          className="bg-indigo-500 text-white rounded-md px-1.5 py-0.5"
         >
           Show All
         </a>

@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-
 const Navbar = () => {
   return (
     <>
@@ -83,7 +82,10 @@ const Navbar = () => {
               Admin Login
             </a>
             <a href="/admin/login" className="mx-2 hover:underline">
-              Staff Login
+              ERP Login
+            </a>
+            <a href="/admin/login" className="mx-2 hover:underline">
+              Library Management System
             </a>
           </div>
         </div>
@@ -251,6 +253,8 @@ const Navbar = () => {
           </a>
         </div>
       </div>
+
+
     </>
   );
 };
