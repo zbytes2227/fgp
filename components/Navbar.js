@@ -8,12 +8,6 @@ const Navbar = () => {
           <div id="head-box">
             <a
               href="/"
-              className="bg-orange-500 p-2 text-medium font-medium text-white"
-            >
-              COURSES
-            </a>
-            <a
-              href="/"
               className="bg-blue-500 p-2 text-medium font-medium text-white"
             >
               Ratapur, Raebareli, Uttar Pradesh 229316
@@ -23,6 +17,12 @@ const Navbar = () => {
               className="bg-green-500 p-2 text-medium font-medium text-white"
             >
               +91 9125790500
+            </a>
+            <a
+              href="/"
+              className="bg-red-500 p-2 text-medium font-medium text-white"
+            >
+             Admissions 2023-24
             </a>
           </div>
 
@@ -81,8 +81,8 @@ const Navbar = () => {
             <a href="/admin/login" className="mx-2 hover:underline">
               Admin Login
             </a>
-            <a href="/admin/login" className="mx-2 hover:underline">
-              ERP Login
+            <a href="/aicte" className="mx-2 hover:underline">
+              AICTE
             </a>
             <a href="/admin/login" className="mx-2 hover:underline">
               Library Management System
@@ -210,6 +210,7 @@ const Navbar = () => {
 
           <img src="/up_logo.svg" class="w-20 mx-3 md:block hidden" alt="Flowbite Logo" />
           <img src="/make_in_india.png" class="w-20 md:block hidden" alt="Flowbite Logo" />
+          <img src="/swach_bharat.png" class="w-20 md:block hidden" alt="Flowbite Logo" />
         </div>
       </nav>
 
@@ -230,14 +231,14 @@ const Navbar = () => {
           <a href="/gallery" className="mx-2 hover:underline">
             Gallery
           </a>
-          <a href="/" className="mx-2 hover:underline">
+          <a href="/tpc" className="mx-2 hover:underline">
             Training & Placement
-          </a>
-          <a href="/contact" className="mx-2 hover:underline">
-            Contact
           </a>
           <a href="/faculty" className="mx-2 hover:underline">
             Faculty/Staff
+          </a>
+          <a href="/notices" className="mx-2 hover:underline">
+            Notices
           </a>
           <a href="/" className="mx-2 hover:underline">
             College Community
@@ -246,10 +247,10 @@ const Navbar = () => {
             Attendance
           </a>
           <a href="/" className="mx-2 hover:underline">
-            Student Section
+            Students
           </a>
-          <a href="/notices" className="mx-2 hover:underline">
-            Notices
+          <a href="/contact" className="mx-2 hover:underline">
+            Contact
           </a>
         </div>
       </div>

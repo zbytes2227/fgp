@@ -7,6 +7,8 @@ import "react-toastify/dist/ReactToastify.css";
 import AdminNoticesCard from "@/components/AdminNoticeCard";
 import AdminNoticeForm from "@/components/AdminNoticeForm";
 import Navbar from "@/components/Navbar";
+import AdminAicteForm from "@/components/AdminAicteForm";
+import AdminAicteCard from "@/components/AdminAicteCard";
 
 const Dashboard = () => {
   const router = useRouter();
@@ -100,13 +102,29 @@ const Dashboard = () => {
               </button>
             </div>
           </div>
-          <div className="mx-auto container" id="div1">
+          <h2 class="text-2xl font-bold text-center">
+            College Notice Administration
+          </h2>
+          <div className="mx-auto container py-8 mb-6" id="div1">
             <div className="flex flex-wrap">
               <div className="w-full sm:w-1/2 p-1" id="divA">
                 <AdminNoticeForm />
               </div>
               <div className="w-full sm:w-1/2 p-1" id="divB">
                 <AdminNoticesCard />
+              </div>
+            </div>
+          </div>
+          <h2 class="text-2xl font-bold text-center">
+          Aicte Notice Administration
+          </h2>
+          <div className="mx-auto container py-8" id="div1">
+            <div className="flex flex-wrap">
+              <div className="w-full sm:w-1/2 p-1" id="divA">
+                <AdminAicteForm />
+              </div>
+              <div className="w-full sm:w-1/2 p-1" id="divB">
+                <AdminAicteCard />
               </div>
             </div>
           </div>

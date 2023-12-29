@@ -26,7 +26,6 @@ const AllNotices = () => {
   return (
     <>
       <Navbar />
-
       <div className="container mx-auto my-5 border border-2">
         <div class="relative">
           <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">

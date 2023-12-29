@@ -3,17 +3,17 @@ import FeatureCard from './FeatureCard'
 
 const Features = () => {
   return (
-    <section class="text-gray-600 body-font">
+    <section class="text-white bg-indigo-500 body-font">
     <div class="container px-5 py-12 mx-auto">
       <div class="text-center mb-10">
-        <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
-          Why Choose Us ?
+        <h1 class="sm:text-3xl text-2xl font-semibold text-center title-font mb-4">
+          Why Choose Feroze Gandhi Polytechnic, Raebareli ?
         </h1>
         <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-        At our institution, we pride ourselves on offering a diverse range of technical courses to cater to different interests and career goals. 
+        Feroze Gandhi Polytechnic, Raebareli is among the best Government Engineering Institutes in Uttar Pradesh.
         </p>
       </div>
-      <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+      <div class="flex text-gray-900 flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
         <FeatureCard text={"Wifi Campus"}/>
         <FeatureCard text={"Experienced Faculty"}/>
         <FeatureCard text={"Library"}/>

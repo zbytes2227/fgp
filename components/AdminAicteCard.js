@@ -3,14 +3,14 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 
-const AdminNoticesCard = () => {
+const AdminAicteCard = () => {
   const [notices, setNotices] = useState([]);
   const [Loading, setLoading] = useState(false);
 
   useEffect(() => {
     // Fetch notices from the API
     setLoading(true);
-    fetch("/api/getNotice")
+    fetch("/api/getAicte")
       .then((response) => response.json())
       .then((data) => {
         if (data.success) {
@@ -32,7 +32,7 @@ const AdminNoticesCard = () => {
   async function delNotice(id) {
     try {
 
-      const fetch_api = await fetch("/api/delNotice/", {
+      const fetch_api = await fetch("/api/delAicte/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -85,10 +85,10 @@ const AdminNoticesCard = () => {
   }
 
   return (
-    <div className="border bg-green-200 border-3 pl-5 shadow-lg w-full rounded-xl lg:mr-1 lg:mb-1 mr-0 mb-1 p-3">
+    <div className="border bg-orange-200 border-3 pl-5 shadow-lg w-full rounded-xl lg:mr-1 lg:mb-1 mr-0 mb-1 p-3">
       <ToastContainer />
       <h4 className="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-inherit mb-2">
-        Published Notices
+        Published Aicte Notices
       </h4>
 
       <div className="p-3" style={{ maxHeight: "250px", overflowY: "auto" }}>
@@ -145,4 +145,4 @@ const AdminNoticesCard = () => {
   );
 };
 
-export default AdminNoticesCard;
+export default AdminAicteCard;

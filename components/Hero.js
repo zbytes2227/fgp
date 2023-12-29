@@ -4,7 +4,7 @@ import SpecialProfileBox from "./SpecialProfileBox";
 
 const Hero = () => {
   return (
-    <div className="co border">
+    <div className="">
       <div className="flex flex-col lg:flex-row">
         <div className="h-[30vh] md:h-[50vh] w-full lg:w-2/3">
           <Carousel

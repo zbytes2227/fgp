@@ -22,9 +22,9 @@ const MarqueeNews = () => {
   }, []); // The empty dependency array ensures that the effect runs only once on mount
 
   return (
-    <div className="bg-gray-400 flex">
-      {/* <div className="bg-red-600 flex px-3 hidden md:block rounded font-bold text-white">Notices</div> */}
-      <Marquee pauseOnHover="True" speed={60}>
+    <div className="bg-black text-white flex" >
+      <div className="bg-red-600 flex px-3 block font-bold text-white items-center">Notices</div>
+      <Marquee pauseOnHover="True" speed={60} className="py-2.5">
         {notices.slice(0, 5).map((notice) => (
           <a
             href={notice.link || "/notices"}

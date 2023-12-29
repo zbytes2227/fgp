@@ -1,4 +1,5 @@
 "use client";
+import ContactCard from "@/components/ContactCard";
 import Events from "@/components/Events";
 import FeatureCard from "@/components/FeatureCard";
 import Features from "@/components/Features";
@@ -15,24 +16,27 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <MarqueeNews/>
       <Fade direction="up" triggerOnce="true">
         <Hero />
-      </Fade>
-      <Fade direction="up" triggerOnce="true">
-        <Hero2 />
+        <MarqueeNews/>
       </Fade>
       <Fade direction="up" triggerOnce="true">
         <Objective />
       </Fade>
       <Fade direction="up" triggerOnce="true">
-        <Hods />
+        <Hero2 />
       </Fade>
       <Fade direction="up" triggerOnce="true">
         <Events />
       </Fade>
       <Fade direction="up" triggerOnce="true">
+        <Hods />
+      </Fade>
+      <Fade direction="up" triggerOnce="true">
         <Features />
+      </Fade>
+      <Fade direction="up" triggerOnce="true">
+      <ContactCard/>
       </Fade>
       <Footer />
     </>
