@@ -22,8 +22,8 @@ const NoticesCard = () => {
 
   return (
     <>
-      <div className="flex justify-between items-center">
-        <h4 className="block font-sans text-2xl ml-3 font-semibold mb-2">
+      <div className="flex justify-between items-center bg-orange-600 p-1 py-2 rounded-md" id="temp">
+        <h4 className="block font-sans text-2xl ml-3 font-semibold ">
           Events & Notices
         </h4>
         <a
@@ -35,7 +35,7 @@ const NoticesCard = () => {
       </div>
 
       {/* <div className="border border-3"> */}
-      <div className="p-1" style={{ maxHeight: "360px", overflowY: "auto" }}>
+      <div className="p-1" style={{ maxHeight: "360px", overflowY: "auto" }} id="temp">
         {Loading && (
           <div role="status" className="flex justify-center">
             <svg

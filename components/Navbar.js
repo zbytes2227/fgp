@@ -1,10 +1,31 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 const Navbar = () => {
+  const zoomUp = () => {
+    document.body.style.zoom = "120%"; // Adjust the zoom level as needed
+  };
+  const zoomDown = () => {
+    document.body.style.zoom = "80%"; // Adjust the zoom level as needed
+  };
+  const zoomNormal = () => {
+    document.body.style.zoom = "100%"; // Adjust the zoom level as needed
+  };
+
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = React.createRef();
+  const handleButtonClick = () => {
+    if (isPlaying) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0; // Reset to the beginning
+    } else {
+      audioRef.current.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
   return (
     <>
       <div className="bg-gray-200 py-1.5 hidden md:block text-sm max-h-max">
-        <div className="container mx-auto flex flex-wrap justify-around">
+        <div className="c flex flex-wrap justify-around">
           <div id="head-box">
             <a
               href="/"
@@ -16,14 +37,13 @@ const Navbar = () => {
               href="tel:05352211269"
               className="bg-green-500 p-2 text-medium font-medium text-white"
             >
-                +0535-2211269
-              
+              +0535-2211269
             </a>
             <a
               href="/"
               className="bg-red-500 p-2 text-medium font-medium text-white"
             >
-             Admissions 2023-24
+              Admissions 2023-24
             </a>
           </div>
 
@@ -78,7 +98,7 @@ const Navbar = () => {
             </a>
           </div>
 
-          <div id="tail-box">
+          {/* <div id="tail-box" className="bg-blue-500 px">
             <a href="/admin/login" className="mx-2 hover:underline">
               Admin Login
             </a>
@@ -91,15 +111,60 @@ const Navbar = () => {
             <a href="/admin/login" className="mx-2 hover:underline">
               Grievance
             </a>
+          </div> */}
+          <div id="head-box">
+            <a
+              href="/admin/login"
+              className="bg-blue-500 p-2 text-medium font-medium text-white"
+            >
+              Admin Login
+            </a>
+            <a
+              href="lms"
+              className="bg-red-500 p-2 text-medium font-medium text-white"
+            >
+              Library Management System
+            </a>
+            <a
+              href="/"
+              className="bg-green-500 p-2 text-medium font-medium text-white"
+            >
+              Grievance
+            </a>
+            <a
+              onClick={() => zoomUp()}
+              className="text-medium font-medium bg-red-500 p-2 hover:cursor-pointer hover:bg-red-700"
+            >
+              A+
+            </a>
+            <a
+              onClick={() => zoomNormal()}
+              className="text-medium font-medium bg-red-500 p-2 hover:cursor-pointer hover:bg-red-700"
+            >
+              A
+            </a>
+            <a
+              onClick={() => zoomDown()}
+              className="text-medium font-medium bg-red-500 p-2 hover:cursor-pointer hover:bg-red-700"
+            >
+              A-
+            </a>
+            <a
+              onClick={() => handleButtonClick()}
+              className="text-medium font-medium bg-orange-500 p-2 hover:cursor-pointer"
+            >
+               {isPlaying ? 'Pause' : 'Read'}
+            </a>
+            <audio className="" ref={audioRef} src="audio.mp3" />
           </div>
         </div>
       </div>
 
       <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
-        <div class="max-w-screen-xl flex flex- items-center justify-between mx-auto p-4">
+        <div class="max-w-screen flex flex- items-center justify-between mx-auto p-4">
           <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img
-              src="/logo_im1.png"
+              src="/logo_im2.png"
               class="w-60 md:w-auto"
               alt="Flowbite Logo"
             />
@@ -141,7 +206,8 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="/about"
+                <a
+                  href="/about"
                   id="dropdownNavbarLink"
                   data-dropdown-toggle="dropdownNavbar"
                   class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
@@ -208,18 +274,33 @@ const Navbar = () => {
                   Faculty
                 </a>
               </li>
-           
             </ul>
           </div>
-
-          <img src="/up_logo.svg" class="w-20 mx-3 md:block hidden" alt="Flowbite Logo" />
-          <img src="/make_in_india.png" class="w-20 md:block hidden" alt="Flowbite Logo" />
-          <img src="/swach_bharat.png" class="w-20 md:block hidden" alt="Flowbite Logo" />
+          <div className="flex items-center">
+            <img
+              src="/up_logo.svg"
+              class="w-20 mx-3 md:block hidden"
+              alt="Flowbite Logo"
+            />
+            <img
+              src="/make_in_india.png"
+              class="w-20 md:block hidden"
+              alt="Flowbite Logo"
+            />
+            <img
+              src="/swach_bharat.png"
+              class="w-20 md:block hidden"
+              alt="Flowbite Logo"
+            />
+          </div>
         </div>
       </nav>
 
-      <div className="bg-indigo-700 py-1 hidden md:block text-white text-sm">
-        <div className="container mx-auto flex flex-wrap justify-center">
+      <div
+        className="bg-orange-600 py-1 hidden md:block font-semibold text-white text-md"
+        id="temp"
+      >
+        <div className="contaauto flex flex-wrap justify-center">
           <a href="/" className="mx-2 hover:underline">
             Home
           </a>
@@ -238,7 +319,7 @@ const Navbar = () => {
           <a href="https://shorturl.at/cuz45" className="mx-2 hover:underline">
             Fee Structure
           </a>
-        
+
           <a href="/tpc" className="mx-2 hover:underline">
             Training & Placement
           </a>
@@ -261,12 +342,10 @@ const Navbar = () => {
             Contact
           </a>
           <a href="/aicte" className="mx-2 hover:underline">
-            Aicte
+            AICTE
           </a>
         </div>
       </div>
-
-
     </>
   );
 };

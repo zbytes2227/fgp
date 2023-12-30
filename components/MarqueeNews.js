@@ -23,7 +23,7 @@ const MarqueeNews = () => {
 
   return (
     <div className="bg-black text-white flex" >
-      <div className="bg-red-600 flex px-3 block font-bold text-white items-center">Notices</div>
+      <div className="bg-orange-600 flex px-3 text-lg w-36 block font-extrabold text-white items-center" id="temp">Latest News</div>
       <Marquee pauseOnHover="True" speed={60} className="py-2.5">
         {notices.slice(0, 5).map((notice) => (
           <a

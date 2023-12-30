@@ -6,8 +6,8 @@ import Temp from './Temp'
 
 const Events = () => {
   return (
-    <section class="body-font">
-    <div class="conauto flex bg-indigo-600 px-1 md:px-16 py-1 md:flex-row flex-col justify-center items-center">
+    <section class="body-font" >
+    <div class="conauto flex bg-orange-800 px-1 md:px-16 py-1 md:flex-row flex-col justify-center items-center" id='temp'>
       {/* <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
         <h1 class="title-font sm:text-4xl text-3xl mb-4 font-extrabold text-white">Our Vision</h1>
         <p class="mb-8 leading-relaxed text-white">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.Copper mug try-hard pitchfork pour-ld-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
@@ -25,21 +25,24 @@ const Events = () => {
       </div> */}
 
       <div class="lg:w-1/2 lg:w-full md:w-1/2 w-full">
-       <div className="bg-white p-3 m-6 rounded-lg">
+       <div className="bg-white p-3 m-6 rounded-lg  md:block hidden">
         
 
-       <h4 class="title-font sm:text-4xl text-2xl md:mb-4 mb-2 font-extrabold text-center ">Upcoming Site</h4>
+       <h4 class="title-font sm:text-4xl text-2xl  font-extrabold text-center ">Facilities</h4>
 
        <Carousel
-            className="md:h-80 h-50 bg-gray-400"
+            className="md:h-80 h-50 bg--400"
             autoplay={true}
             loop={true}
             transition={{ duration: 1 }}
+            nextArrow={false}
+            prevArrow={false}
           >
           
-        <Temp/>
-        <Temp/>
-        <Temp/>
+        <Temp title="gbbhsxdsb dsh " content="KKngineering that utilises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices, integrated circuits & electronicf engineering that utilises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices,lises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices, integrated circuits & electronic" img="https://images.pexels.com/photos/15429294/pexels-photo-15429294/free-photo-of-students-at-reading-room.jpeg?auto=compress&cs=tinysrgb&w=600"/>
+        <Temp title="gbbhsxdsb dsh " content="KKngineering that utilises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices, integrated circuits & electronicf engineering that utilises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices,lises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices, integrated circuits & electronic" img="https://images.pexels.com/photos/15429294/pexels-photo-15429294/free-photo-of-students-at-reading-room.jpeg?auto=compress&cs=tinysrgb&w=600"/> 
+         <Temp title="gbbhsxdsb dsh " content="KKngineering that utilises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices, integrated circuits & electronicf engineering that utilises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices,lises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices, integrated circuits & electronic" img="https://images.pexels.com/photos/15429294/pexels-photo-15429294/free-photo-of-students-at-reading-room.jpeg?auto=compress&cs=tinysrgb&w=600"/> 
+         <Temp title="gbbhsxdsb dsh " content="KKngineering that utilises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices, integrated circuits & electronicf engineering that utilises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices,lises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices, integrated circuits & electronic" img="https://images.pexels.com/photos/15429294/pexels-photo-15429294/free-photo-of-students-at-reading-room.jpeg?auto=compress&cs=tinysrgb&w=600"/>
             </Carousel>
 
       

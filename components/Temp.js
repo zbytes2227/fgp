@@ -1,16 +1,22 @@
 import React from 'react'
 
-const Temp = () => {
+const Temp = (props) => {
   return (
     <div class="p-4 w-full">
-        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg flex">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-            <path d="M8 17l4 4 4-4m-4-5v9"></path>
-            <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
-          </svg>
-          <h2 class="title-font font-medium text-3xl text-gray-900">2.7K</h2>
-          <p class="leading-relaxed">Temporary filed</p>
+           <div class="p-2 w-full">
+        <div class="h-full flex items-center border-gray-200 border border-2 rounded-lg">
+          <img alt="team" class="w-1/3 h-full bg-gray-100 object-cover object-center flex-shrink-0 rounded mr-4" src={props.img}/>
+          <div class="flex-grow">
+
+            <h2 class="title-font text-xl font-semibold p-2">{props.title}</h2>
+            <h2 class="text-gray-900 title-font font-medium p-2">{props.content}</h2>
+          </div>
         </div>
+      </div>
+        {/* <div class="border-2 border-gray-200 px-4 py-6 rounded-lg flex flex-row flex-wrap">
+          <img src='princiapl.jpg' className='h-56' />
+          <p class=""> established by the Government of Uttar Pradesh in the year 2015 with four branches, Electrical Engineering, Electronics Engineering, Civil Engineering and Computer Science & Engineering with annual intake of Sixty (60) in each branch. The college is also affiliating institute of Dr A P J Abdul Kalam Technical University, Lucknow (Formerly Uttar Pradesh Technical University, Lucknow). The college has moved to its own fully residential campus located at Tirwa, Kannauj in the month of July 2017 and all academic activities from the session 2016-17 bei</p>
+        </div> */}
       </div>
   )
 }

@@ -36,7 +36,13 @@ const Hero = () => {
           </Carousel>
         </div>
 
-        <div className="bg-indigo-500 w-full flex flex-col md:justify-between lg:justify-center lg:w-1/3 lg:mt-0 ml-0 p-3 text-sm">
+        <div className="bg-indigo-700 w-full flex flex-col md:justify-between lg:justify-center lg:w-1/3 lg:mt-0 ml-0 p-3 text-sm" id="temp">
+        <SpecialProfileBox
+            name="Smt. Anandiben Patel"
+            post="Honble Chancellor & H.E. Governor of Uttar Pradesh"
+            img="/4img88.jpg"
+            link="https://en.wikipedia.org/wiki/Anandiben_Patel"
+          />
           <SpecialProfileBox
             name="Shri Yogi Adityanath"
             post="Honble CM of Uttar Pradesh"
@@ -55,12 +61,6 @@ const Hero = () => {
             post="Principal secretary of Technical Education Uttar Pradesh"
             img="/3img88.jpeg"
             link="https://in.linkedin.com/in/m-devaraj-bba18716"
-          />
-          <SpecialProfileBox
-            name="Late. Feroze Gandhi"
-            post="Politician, Member of the Lok Sabha"
-            img="/fg.jpg"
-            link="https://en.wikipedia.org/wiki/Feroze_Gandhi"
           />
         </div>
       </div>

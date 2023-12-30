@@ -3,7 +3,7 @@ import FeatureCard from './FeatureCard'
 
 const Features = () => {
   return (
-    <section class="text-white bg-indigo-500 body-font">
+    <section class="text-white bg-pink-900 body-font" id='temp'>
     <div class="container px-5 py-12 mx-auto">
       <div class="text-center mb-10">
         <h1 class="sm:text-3xl text-2xl font-semibold text-center title-font mb-4">
