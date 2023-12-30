@@ -13,10 +13,11 @@ const Navbar = () => {
               Ratapur, Raebareli, Uttar Pradesh 229316
             </a>
             <a
-              href="/"
+              href="tel:05352211269"
               className="bg-green-500 p-2 text-medium font-medium text-white"
             >
-              +91 9125790500
+                +0535-2211269
+              
             </a>
             <a
               href="/"
@@ -84,8 +85,11 @@ const Navbar = () => {
             <a href="/aicte" className="mx-2 hover:underline">
               AICTE
             </a>
-            <a href="/admin/login" className="mx-2 hover:underline">
+            <a href="/lms" className="mx-2 hover:underline">
               Library Management System
+            </a>
+            <a href="/admin/login" className="mx-2 hover:underline">
+              Grievance
             </a>
           </div>
         </div>
@@ -231,6 +235,10 @@ const Navbar = () => {
           <a href="/gallery" className="mx-2 hover:underline">
             Gallery
           </a>
+          <a href="https://shorturl.at/cuz45" className="mx-2 hover:underline">
+            Fee Structure
+          </a>
+        
           <a href="/tpc" className="mx-2 hover:underline">
             Training & Placement
           </a>
@@ -251,6 +259,9 @@ const Navbar = () => {
           </a>
           <a href="/contact" className="mx-2 hover:underline">
             Contact
+          </a>
+          <a href="/aicte" className="mx-2 hover:underline">
+            Aicte
           </a>
         </div>
       </div>

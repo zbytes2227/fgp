@@ -41,21 +41,26 @@ const Hero = () => {
             name="Shri Yogi Adityanath"
             post="Honble CM of Uttar Pradesh"
             img="/1img88.png"
+            link="https://en.wikipedia.org/wiki/Yogi_Adityanath"
+            
           />
           <SpecialProfileBox
             name="Shri Ashish Patel"
             post="Honble Minister of Technical Education, UP"
             img="/2img88.png"
+            link="https://en.wikipedia.org/wiki/Ashish_Singh_Patel"
           />
           <SpecialProfileBox
-            name="Shri Yogi Adityanath"
-            post="Honble CM of Uttar Pradesh"
-            img="/1img88.png"
+            name="Shri M. Devraj"
+            post="Principal secretary of Technical Education Uttar Pradesh"
+            img="/3img88.jpeg"
+            link="https://in.linkedin.com/in/m-devaraj-bba18716"
           />
           <SpecialProfileBox
             name="Late. Feroze Gandhi"
             post="Politician, Member of the Lok Sabha"
             img="/fg.jpg"
+            link="https://en.wikipedia.org/wiki/Feroze_Gandhi"
           />
         </div>
       </div>
