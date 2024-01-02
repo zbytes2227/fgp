@@ -9,6 +9,8 @@ import AdminNoticeForm from "@/components/AdminNoticeForm";
 import Navbar from "@/components/Navbar";
 import AdminAicteForm from "@/components/AdminAicteForm";
 import AdminAicteCard from "@/components/AdminAicteCard";
+import AdminTpcForm from "@/components/AdminTpcForm";
+import AdminTpcCard from "@/components/AdminTpcCard";
 
 const Dashboard = () => {
   const router = useRouter();
@@ -125,6 +127,19 @@ const Dashboard = () => {
               </div>
               <div className="w-full sm:w-1/2 p-1" id="divB">
                 <AdminAicteCard />
+              </div>
+            </div>
+          </div>
+          <h2 class="text-2xl font-bold text-center">
+          Placement Record Administration
+          </h2>
+          <div className="mx-auto container py-8" id="div1">
+            <div className="flex flex-wrap">
+              <div className="w-full sm:w-1/2 p-1" id="divA">
+                <AdminTpcForm />
+              </div>
+              <div className="w-full sm:w-1/2 p-1" id="divB">
+                <AdminTpcCard />
               </div>
             </div>
           </div>

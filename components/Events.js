@@ -39,10 +39,22 @@ const Events = () => {
             prevArrow={false}
           >
           
-        <Temp title="gbbhsxdsb dsh " content="KKngineering that utilises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices, integrated circuits & electronicf engineering that utilises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices,lises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices, integrated circuits & electronic" img="https://images.pexels.com/photos/15429294/pexels-photo-15429294/free-photo-of-students-at-reading-room.jpeg?auto=compress&cs=tinysrgb&w=600"/>
-        <Temp title="gbbhsxdsb dsh " content="KKngineering that utilises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices, integrated circuits & electronicf engineering that utilises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices,lises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices, integrated circuits & electronic" img="https://images.pexels.com/photos/15429294/pexels-photo-15429294/free-photo-of-students-at-reading-room.jpeg?auto=compress&cs=tinysrgb&w=600"/> 
-         <Temp title="gbbhsxdsb dsh " content="KKngineering that utilises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices, integrated circuits & electronicf engineering that utilises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices,lises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices, integrated circuits & electronic" img="https://images.pexels.com/photos/15429294/pexels-photo-15429294/free-photo-of-students-at-reading-room.jpeg?auto=compress&cs=tinysrgb&w=600"/> 
-         <Temp title="gbbhsxdsb dsh " content="KKngineering that utilises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices, integrated circuits & electronicf engineering that utilises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices,lises electrical components such as semiconductors, transistors, diodes and others to design Electronics circuits, devices, integrated circuits & electronic" img="https://images.pexels.com/photos/15429294/pexels-photo-15429294/free-photo-of-students-at-reading-room.jpeg?auto=compress&cs=tinysrgb&w=600"/>
+        <Temp title="Hostel" 
+        content="Feroze Gandhi Polytechnic provides secure, well-equipped hostels for both genders, ensuring privacy and safety. The facilities include spacious rooms, recreation areas, and essential amenities, fostering an ideal living and learning environment. With 24/7 security, nutritious meals, Wi-Fi, and separate accommodations, the hostels prioritize comfort. These facilities contribute to holistic student development, promoting social interactions and enhancing the overall campus experience."
+        img="princiapl.jpg"/>
+
+         <Temp title="Library" 
+        content="Feroze Gandhi Polytechnic's library is a rich academic hub with extensive books, journals, and digital resources. It fosters research and learning in a quiet environment, equipped with modern facilities. Efficient staff supports a culture of continuous learning, making the library a pivotal resource for academic excellence within the institution."
+        img="princiapl.jpg"/>
+
+<Temp title="Mess" 
+        content="The mess at Feroze Gandhi Polytechnic prioritizes nutritious and diverse meals for students, fostering a hygienic and well-managed dining environment. Beyond providing essential sustenance, it serves as a communal space, encouraging social interactions and creating a comfortable atmosphere within the campus."
+        img="princiapl.jpg"/>
+
+<Temp title="NCC" 
+        content="Feroze Gandhi Polytechnic hosts NCC programs, fostering leadership and discipline. Through camps, drills, and community service, it shapes character, instills patriotism, and enhances civic responsibility. NCC participation develops teamwork and leadership skills, aligning with the institution's holistic education approach, contributing to students' overall personality development."
+        img="princiapl.jpg"/>
+
             </Carousel>
 
       

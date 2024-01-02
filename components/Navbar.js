@@ -24,9 +24,9 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="bg-gray-200 py-1.5 hidden md:block text-sm max-h-max">
+      <div className="bg-gray-200 hidden md:block text-sm max-h-max">
         <div className="c flex flex-wrap justify-around">
-          <div id="head-box">
+          <div id="head-box" className="flex">
             <a
               href="/"
               className="bg-blue-500 p-2 text-medium font-medium text-white"
@@ -40,14 +40,14 @@ const Navbar = () => {
               +0535-2211269
             </a>
             <a
-              href="/"
+              href="/admissions"
               className="bg-red-500 p-2 text-medium font-medium text-white"
             >
               Admissions 2023-24
             </a>
           </div>
 
-          <div className="text-gray-800 flex" id="social-media">
+          <div className="text-gray-800 flex py-1.5" id="social-media">
             <a href="/" className="px-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +112,7 @@ const Navbar = () => {
               Grievance
             </a>
           </div> */}
-          <div id="head-box">
+          <div id="head-box" className="flex-row flex">
             <a
               href="/admin/login"
               className="bg-blue-500 p-2 text-medium font-medium text-white"
@@ -151,9 +151,14 @@ const Navbar = () => {
             </a>
             <a
               onClick={() => handleButtonClick()}
-              className="text-medium font-medium bg-orange-500 p-2 hover:cursor-pointer"
+              className="text-medium font-medium bg-orange-500 p-2 hover:cursor-pointer flex "
             >
-               {isPlaying ? 'Pause' : 'Read'}
+                <img src={!isPlaying ? 'sound_logo.svg' : 'mute_logo.svg'} />{" "}{isPlaying ? 'Stop' : 'Audio'} 
+            </a>
+            <a
+              className="text-medium text-white font-medium bg-green-500 p-2 hover:cursor-pointer"
+            >
+              College Code : 2224
             </a>
             <audio className="" ref={audioRef} src="audio.mp3" />
           </div>
@@ -195,11 +200,11 @@ const Navbar = () => {
             </svg>
           </button>
           <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-            <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul class="flex flex-col bg-   font-medium p-2 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                  class="block px-3 py-1 text-white bg-blue-700 rounded-full "
                   aria-current="page"
                 >
                   Home
@@ -210,7 +215,7 @@ const Navbar = () => {
                   href="/about"
                   id="dropdownNavbarLink"
                   data-dropdown-toggle="dropdownNavbar"
-                  class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  class="block px-3 py-1 text-white bg-blue-700 rounded-full "
                 >
                   About
                 </a>
@@ -261,7 +266,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="/notices"
-                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  class="block px-3 py-1 text-white bg-blue-700 rounded-full "
                 >
                   Notices
                 </a>
@@ -269,7 +274,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="/faculty"
-                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  class="block px-3 py-1 text-white bg-blue-700 rounded-full "
                 >
                   Faculty
                 </a>
@@ -335,7 +340,7 @@ const Navbar = () => {
           <a href="/attendance" className="mx-2 hover:underline">
             Attendance
           </a>
-          <a href="/" className="mx-2 hover:underline">
+          <a href="https://urise.up.gov.in/student/login" className="mx-2 hover:underline">
             Students
           </a>
           <a href="/contact" className="mx-2 hover:underline">
@@ -351,149 +356,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-// import {
-//   Navbar,
-//   Collapse,
-//   Typography,
-//   IconButton,
-// } from "@material-tailwind/react";
-// import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-// import Image from "next/image";
-
-// function NavList() {
-//   return (
-//     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-//       <Typography
-//         as="li"
-//         variant="small"
-//         color="blue-gray"
-//         className="p-1 font-medium"
-//       >
-//         <a
-//           href="/"
-//           className="flex items-center hover:text-blue-500 transition-colors"
-//         >
-//           Home
-//         </a>
-//       </Typography>
-//       <Typography
-//         as="li"
-//         variant="small"
-//         color="blue-gray"
-//         className="p-1 font-medium"
-//       >
-//         <a
-//           href="/about"
-//           className="flex items-center hover:text-blue-500 transition-colors"
-//         >
-//           About
-//         </a>
-//       </Typography>
-//       <Typography
-//         as="li"
-//         variant="small"
-//         color="blue-gray"
-//         className="p-1 font-medium"
-//       >
-//         <a
-//           href="/gallery"
-//           className="flex items-center hover:text-blue-500 transition-colors"
-//         >
-//           Gallery
-//         </a>
-//       </Typography>
-//       <Typography
-//         as="li"
-//         variant="small"
-//         color="blue-gray"
-//         className="p-1 font-medium"
-//       >
-//         <a
-//           href="/admissions"
-//           className="flex items-center hover:text-blue-500 transition-colors"
-//         >
-//           Admissions
-//         </a>
-//       </Typography>
-//       <Typography
-//         as="li"
-//         variant="small"
-//         color="blue-gray"
-//         className="p-1 font-medium"
-//       >
-//         <a
-//           href="/contact"
-//           className="flex items-center hover:text-blue-500 transition-colors"
-//         >
-//           Contact
-//         </a>
-//       </Typography>
-//     </ul>
-//   );
-// }
-
-// export function NavbarSimple() {
-//   const [openNav, setOpenNav] = React.useState(false);
-
-//   const formatDate = () => {
-//     const now = new Date();
-//     return new Intl.DateTimeFormat("en-US", {
-//       weekday: "long",
-//       day: "numeric",
-//       month: "long",
-//       year: "numeric",
-//     }).format(now);
-//   };
-
-//   const handleWindowResize = () =>
-//     window.innerWidth >= 960 && setOpenNav(false);
-
-//   React.useEffect(() => {
-//     window.addEventListener("resize", handleWindowResize);
-
-//     return () => {
-//       window.removeEventListener("resize", handleWindowResize);
-//     };
-//   }, []);
-
-//   return (
-//     <>
-//       <div className="bg-red-400 flex justify-center text-sm text-white">
-//         [Warning] Website Under Development
-//       </div>
-
-//       <div className="bg-blue-400 flex justify-around text-white">
-//         <div>{formatDate()}</div>
-//         <div className="hidden md:block">
-//           <a href="/admin/login">Admin Login</a>
-//         </div>
-//       </div>
-//       <Navbar className="mx-auto px-6 py-1.5">
-//         <div className="flex items-center justify-between text-blue-gray-900">
-//           <a href="/" className="flex items-center">
-//             <Image src={"/logo_im1.png"} alt="d" height={80} width={500} />{" "}
-//           </a>
-//           <div className="hidden lg:block">
-//             <NavList />
-//           </div>
-//           <IconButton
-//             variant="text"
-//             className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-//             ripple={false}
-//             onClick={() => setOpenNav(!openNav)}
-//           >
-//             {openNav ? (
-//               <XMarkIcon className="h-6 w-6" strokeWidth={2} />
-//             ) : (
-//               <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-//             )}
-//           </IconButton>
-//         </div>
-//         <Collapse open={openNav}>
-//           <NavList />
-//         </Collapse>
-//       </Navbar>
-//     </>
-//   );
-// }

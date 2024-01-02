@@ -14,12 +14,14 @@ const page = () => {
     </div>
     <div class="flex flex-wrap justify-center -m-4">
   
-<CoursesCard type="Government" name="Mechanical Engineering" more_link="/courses/mechanical"/>
-<CoursesCard type="Government" name="Electronics Engineering" more_link="/courses/electronics"/>
-<CoursesCard type="Aided" name="Computer Science & Engineering" more_link="/courses/cse"/>
-<CoursesCard type="Aided" name="Information & Technology" more_link="/courses/it"/>
-<CoursesCard type="Aided" name="Instrumental Control" more_link="/courses/ic"/>
-<CoursesCard type="Aided" name="Modern Office Management" more_link="/courses/mom"/>
+  
+    <CoursesCard type="Government" img="https://images.pexels.com/photos/4271641/pexels-photo-4271641.jpeg?auto=compress&cs=tinysrgb&w=600" name="Mechanical Engineering" more_link="/courses/mechanical"/>
+<CoursesCard type="Government" img="https://images.pexels.com/photos/3825581/pexels-photo-3825581.jpeg?auto=compress&cs=tinysrgb&w=600" name="Electronics Engineering" more_link="/courses/electronics"/>
+<CoursesCard type="Aided" img="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=600" name="Computer Science & Engineering" more_link="/courses/cse"/>
+<CoursesCard type="Aided" img="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=600" name="Information & Technology" more_link="/courses/it"/>
+<CoursesCard type="Aided" img="https://images.pexels.com/photos/6755058/pexels-photo-6755058.jpeg?auto=compress&cs=tinysrgb&w=600" name="Instrumental Control" more_link="/courses/ic"/>
+<CoursesCard type="Aided" img="https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=600" name="Modern Office Management" more_link="/courses/mom"/>
+<CoursesCard type="Aided" img="https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg?auto=compress&cs=tinysrgb&w=600" name="Post Graduate Diploma in Computer Application" more_link="/courses/pgdca"/>
 
       
     </div>

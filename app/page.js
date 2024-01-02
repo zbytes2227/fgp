@@ -6,6 +6,7 @@ import Features from "@/components/Features";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Hero2 from "@/components/Hero2";
+import Hero3 from "@/components/Hero3";
 import Hods from "@/components/Hods";
 import MarqueeNews from "@/components/MarqueeNews";
 import Navbar, { NavbarSimple } from "@/components/Navbar";
@@ -18,7 +19,7 @@ export default function Home() {
       <Navbar />
       <Fade direction="up" triggerOnce="true">
         <Hero />
-        <MarqueeNews/>
+        <MarqueeNews />
       </Fade>
       <Fade direction="up" triggerOnce="true">
         <Objective />
@@ -31,12 +32,15 @@ export default function Home() {
       </Fade>
       <Fade direction="up" triggerOnce="true">
         <Hods />
+      </Fade>{" "}
+      <Fade direction="up" triggerOnce="true">
+        <Hero3 />
       </Fade>
       <Fade direction="up" triggerOnce="true">
         <Features />
       </Fade>
       <Fade direction="up" triggerOnce="true">
-      <ContactCard/>
+        <ContactCard />
       </Fade>
       <Footer />
     </>

@@ -3,13 +3,13 @@ import React from 'react'
 const Temp = (props) => {
   return (
     <div class="p-4 w-full">
-           <div class="p-2 w-full">
+           <div class="w-full">
         <div class="h-full flex items-center border-gray-200 border border-2 rounded-lg">
           <img alt="team" class="w-1/3 h-full bg-gray-100 object-cover object-center flex-shrink-0 rounded mr-4" src={props.img}/>
           <div class="flex-grow">
 
-            <h2 class="title-font text-xl font-semibold p-2">{props.title}</h2>
-            <h2 class="text-gray-900 title-font font-medium p-2">{props.content}</h2>
+            <p class="title-font text-xl font-semibold p-2"></p>
+            <h2 class="text-gray-900 title-font font-medium p-2"><strong>{props.title}:</strong>{" "}{props.content}</h2>
           </div>
         </div>
       </div>
