@@ -8,19 +8,19 @@ const Hero = () => {
     {
       name: "Shri Ashish Patel",
       post: "Honble Minister of Technical Education, UP",
-      img: "/2img88.png",
+      img: "/special/sp055.png",
       link: "https://en.wikipedia.org/wiki/Ashish_Singh_Patel",
     },
     {
       name: "Shri M. Devraj",
       post: "Principal secretary of Technical Education Uttar Pradesh",
-      img: "/3img88.jpeg",
+      img: "/special/sp044.jpeg",
       link: "https://in.linkedin.com/in/m-devaraj-bba18716",
     },
     {
       name: "Shri Kanhaiya Ram",
       post: "Directorate of Technical Education, Uttar Pradesh",
-      img: "/4121img88.jpg",
+      img: "/special/sp011.jpg",
       link: "https://in.linkedin.com/in/m-devaraj-bba18716",
     },
   ];
@@ -80,14 +80,14 @@ const Hero = () => {
             <Image
               height={"1000"}
               width={"1000"}
-              src="/gallery/zb0411.jpg"
+              src="/gallery/zb2.jpg"
               alt="image 1"
               className="h-full w-full object-cover"
             />
             <Image
               height={"1000"}
               width={"1000"}
-              src="/gallery/zb2.jpg"
+              src="/gallery/zb0404.jpg"
               alt="image 1"
               className="h-full w-full object-cover"
             />
@@ -122,13 +122,13 @@ const Hero = () => {
           <SpecialProfileBox
             name="Smt. Anandiben Patel"
             post="Honble Chancellor & H.E. Governor of Uttar Pradesh"
-            img="/4img88.jpg"
+            img="/special/sp033.jpg"
             link="https://en.wikipedia.org/wiki/Anandiben_Patel"
           />
           <SpecialProfileBox
             name="Shri Yogi Adityanath"
             post="Honble CM of Uttar Pradesh"
-            img="/11img88.png"
+            img="/special/sp022.png"
             link="https://en.wikipedia.org/wiki/Yogi_Adityanath"
           />
           <SpecialProfileBox
