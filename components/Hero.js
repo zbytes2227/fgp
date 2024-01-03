@@ -77,22 +77,27 @@ const Hero = () => {
             transition={{ duration: 1 }}
           >
             <img
-              src="/im1.jpeg"
+              src="/banj/DSC_0002.jpg"
               alt="image 1"
               className="h-full w-full object-cover"
             />
             <img
-              src="/im2.jpeg"
+              src="/banj/DSC_0006.jpg"
               alt="image 1"
               className="h-full w-full object-cover"
             />
             <img
-              src="/im3.jpeg"
+               src="/banj/DSC_0009.jpg"
               alt="image 1"
               className="h-full w-full object-cover"
             />
             <img
-              src="/im4.jpeg"
+              src="/banj/DSC_0411.jpg"
+              alt="image 1"
+              className="h-full w-full object-cover"
+            />
+<img
+              src="/banj/DSC_0423.jpg"
               alt="image 1"
               className="h-full w-full object-cover"
             />

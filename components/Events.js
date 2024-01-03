@@ -72,15 +72,21 @@ const Events = () => {
             transition={{ duration: 1 }}
           >
             <img
-              src="https://dummyimage.com/900x480"
+              src="/banj/DSC_0104.jpg"
               alt="image 1"
               className="h-full w-full object-cover"
             />  
-            <img
-            src="https://dummyimage.com/900x480"
-            alt="image 1"
-            className="h-full w-full object-cover"
-          />
+             <img
+              src="/banj/DSC_0152.jpg"
+              alt="image 1"
+              className="h-full w-full object-cover"
+            />  
+             <img
+              src="/banj/DSC_0554.JPG"
+              alt="image 1"
+              className="h-full w-full object-cover"
+            />   
+           
 
             </Carousel>
        </div>
