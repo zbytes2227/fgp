@@ -17,8 +17,8 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <Fade direction="up" triggerOnce="true">
         <Hero />
+      <Fade direction="up" triggerOnce="true">
         <MarqueeNews />
       </Fade>
       <Fade direction="up" triggerOnce="true">

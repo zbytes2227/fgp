@@ -16,7 +16,7 @@ const Hero = () => {
       post: "Principal secretary of Technical Education Uttar Pradesh",
       img: "/3img88.jpeg",
       link: "https://in.linkedin.com/in/m-devaraj-bba18716",
-    },    
+    },
     {
       name: "Shri Kanhaiya Ram",
       post: "Directorate of Technical Education, Uttar Pradesh",
@@ -80,35 +80,35 @@ const Hero = () => {
             <Image
               height={"1000"}
               width={"1000"}
-              src="/banj/DSC_0002.jpg"
+              src="/gallery/zb0411.jpg"
               alt="image 1"
               className="h-full w-full object-cover"
             />
             <Image
               height={"1000"}
               width={"1000"}
-              src="/banj/DSC_0006.jpg"
+              src="/gallery/zb2.jpg"
               alt="image 1"
               className="h-full w-full object-cover"
             />
             <Image
               height={"1000"}
               width={"1000"}
-               src="/banj/DSC_0009.jpg"
+              src="/gallery/zb006.jpg"
               alt="image 1"
               className="h-full w-full object-cover"
             />
             <Image
               height={"1000"}
               width={"1000"}
-              src="/banj/DSC_0411.jpg"
+              src="/gallery/zb09.jpg"
               alt="image 1"
               className="h-full w-full object-cover"
             />
-<Image
+            <Image
               height={"1000"}
               width={"1000"}
-              src="/banj/DSC_0423.jpg"
+              src="/gallery/zb1.jpg"
               alt="image 1"
               className="h-full w-full object-cover"
             />
@@ -137,7 +137,6 @@ const Hero = () => {
             img={currentData1.img}
             link={currentData1.link}
           />
-
           {/* Render the second SpecialProfileBox with the currentData2 */}
           <SpecialProfileBox
             name={currentData2.name}

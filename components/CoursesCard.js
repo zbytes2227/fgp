@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const CoursesCard = (props) => {
@@ -5,7 +6,7 @@ const CoursesCard = (props) => {
     <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
     <div class="h-full rounded-lg bg-white border-2 border-gray-300 hover:border-pink-400 flex flex-col relative overflow-hidden">
       {/* <h2 class="text-sm tracking-widest title-font mb-1 font-medium">{props.type}</h2> */}
-      <img alt="team" class="mb-4 h-64 object-cover object-center flex-shrink-0 rounded" src={props.img}/>
+      <Image width={1000} height={1000} alt="team" class="mb-4 h-64 object-cover object-center flex-shrink-0 rounded" src={props.img}/>
       <div className='p-4'>
 
       <h4 class="text-2xl font-semibold text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">{props.name}</h4>

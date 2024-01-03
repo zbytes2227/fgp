@@ -7,7 +7,7 @@ const Hero2 = () => {
     <section class="text-gray-600 body-font" id='temp'>
   <div class="contauto flex md:px-16 px-5 py-12 md:flex-row flex-col items-center">
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 flex justify-end">
-      <Image height={360} width={360} class="object-cover object-center rounded-xl" alt="hero" src="/principal.png"/>
+      <Image height={320} width={320} class="object-cover object-center rounded-xl" alt="hero" src="/principal.png"/>
     </div>
     <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-justify items-center text-justify">
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-semibold text-center text-gray-900">Message From Principal
