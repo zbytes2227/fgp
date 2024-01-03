@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Carousel } from "@material-tailwind/react";
 import SpecialProfileBox from "./SpecialProfileBox";
+import Image from "next/image";
 
 const Hero = () => {
   const data = [
@@ -76,27 +77,37 @@ const Hero = () => {
             loop={true}
             transition={{ duration: 1 }}
           >
-            <img
+            <Image
+              height={"1000"}
+              width={"1000"}
               src="/banj/DSC_0002.jpg"
               alt="image 1"
               className="h-full w-full object-cover"
             />
-            <img
+            <Image
+              height={"1000"}
+              width={"1000"}
               src="/banj/DSC_0006.jpg"
               alt="image 1"
               className="h-full w-full object-cover"
             />
-            <img
+            <Image
+              height={"1000"}
+              width={"1000"}
                src="/banj/DSC_0009.jpg"
               alt="image 1"
               className="h-full w-full object-cover"
             />
-            <img
+            <Image
+              height={"1000"}
+              width={"1000"}
               src="/banj/DSC_0411.jpg"
               alt="image 1"
               className="h-full w-full object-cover"
             />
-<img
+<Image
+              height={"1000"}
+              width={"1000"}
               src="/banj/DSC_0423.jpg"
               alt="image 1"
               className="h-full w-full object-cover"
