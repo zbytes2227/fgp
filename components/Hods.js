@@ -12,13 +12,13 @@ const Hods = () => {
     </div>
     <div class="flex flex-wrap justify-center -m-4">
   
-<CoursesCard type="Government" img="/tea.png" name="Mechanical Engineering" more_link="/courses/mechanical"/>
-<CoursesCard type="Government" img="/uto=compress&cs=tinysrgb&w=600" name="Electronics Engineering" more_link="/courses/electronics"/>
-<CoursesCard type="Aided" img="/o=compress&cs=tinysrgb&w=600" name="Computer Science & Engineering" more_link="/courses/cse"/>
-<CoursesCard type="Aided" img="/uto=compress&cs=tinysrgb&w=600" name="Information & Technology" more_link="/courses/it"/>
-<CoursesCard type="Aided" img="/uto=compress&cs=tinysrgb&w=600" name="Instrumentation & Control" more_link="/courses/ic"/>
-<CoursesCard type="Aided" img="/o=compress&cs=tinysrgb&w=600" name="Modern Office Management and Secretarial practice" more_link="/courses/mom"/>
-<CoursesCard type="Aided" img="/o=compress&cs=tinysrgb&w=600" name="Post Graduate Diploma in Computer Application" more_link="/courses/pgdca"/>
+<CoursesCard type="Government" img="/courses/mech.png" name="Mechanical Engineering" more_link="/courses/mechanical"/>
+<CoursesCard type="Government" img="/courses/electronics.png" name="Electronics Engineering" more_link="/courses/electronics"/>
+<CoursesCard type="Aided" img="/courses/cs.png" name="Computer Science & Engineering" more_link="/courses/cse"/>
+<CoursesCard type="Aided" img="/courses/it.png" name="Information & Technology" more_link="/courses/it"/>
+<CoursesCard type="Aided" img="/courses/ic.png" name="Instrumentation & Control" more_link="/courses/ic"/>
+<CoursesCard type="Aided" img="/courses/mom.png" name="Modern Office Management and Secretarial practice" more_link="/courses/mom"/>
+<CoursesCard type="Aided" img="/courses/pgdca.png" name="Post Graduate Diploma in Computer Application" more_link="/courses/pgdca"/>
 
       
     </div>

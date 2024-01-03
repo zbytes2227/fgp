@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 const Navbar = () => {
   const zoomUp = () => {
@@ -153,7 +154,7 @@ const Navbar = () => {
               onClick={() => handleButtonClick()}
               className="text-medium font-medium bg-orange-500 p-2 hover:cursor-pointer flex "
             >
-                <img src={!isPlaying ? 'sound_logo.svg' : 'mute_logo.svg'} />{" "}{isPlaying ? 'Stop' : 'Audio'} 
+                <Image height={20} width={20} src={!isPlaying ? '/svg/sound_logo.svg' : '/svg/mute_logo.svg'} />{" "}{isPlaying ? 'Stop' : 'Audio'} 
             </a>
             <a
               className="text-medium text-white font-medium bg-green-500 p-2 hover:cursor-pointer"
@@ -169,7 +170,7 @@ const Navbar = () => {
         <div class="max-w-screen flex flex- items-center justify-between mx-auto p-4">
           <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img
-              src="/logo_im2.png"
+              src="/image/main_logo.png"
               class="w-60 md:w-auto"
               alt="Flowbite Logo"
             />
@@ -204,7 +205,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="/"
-                  class="block px-3 py-1 text-white bg-blue-700 rounded-full "
+                  class="block px-3 py-1 text-white bg-blue-400 rounded-full"
                   aria-current="page"
                 >
                   Home
@@ -215,7 +216,7 @@ const Navbar = () => {
                   href="/about"
                   id="dropdownNavbarLink"
                   data-dropdown-toggle="dropdownNavbar"
-                  class="block px-3 py-1 text-white bg-blue-700 rounded-full "
+                  class="block px-3 py-1 text-white bg-blue-400 rounded-full "
                 >
                   About
                 </a>
@@ -223,7 +224,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="/notices"
-                  class="block px-3 py-1 text-white bg-blue-700 rounded-full "
+                  class="block px-3 py-1 text-white bg-blue-400 rounded-full "
                 >
                   Notices
                 </a>
@@ -231,7 +232,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="/faculty"
-                  class="block px-3 py-1 text-white bg-blue-700 rounded-full "
+                  class="block px-3 py-1 text-white bg-blue-400 rounded-full "
                 >
                   Faculty
                 </a>
@@ -240,17 +241,17 @@ const Navbar = () => {
           </div>
           <div className="flex items-center">
             <img
-              src="/up_logo.svg"
+              src="/image/up_logo.svg"
               class="w-20 mx-3 md:block hidden"
               alt="Flowbite Logo"
             />
             <img
-              src="/make_in_india.png"
+              src="/image/make_in_india.png"
               class="w-20 md:block hidden"
               alt="Flowbite Logo"
             />
             <img
-              src="/swach_bharat.png"
+              src="/image/swach_bharat.png"
               class="w-20 md:block hidden"
               alt="Flowbite Logo"
             />
@@ -291,7 +292,7 @@ const Navbar = () => {
           <a href="/notices" className="mx-2 hover:underline">
             Notices
           </a>
-          <a href="/" className="mx-2 hover:underline">
+          <a href="/community" className="mx-2 hover:underline">
             College Community
           </a>
           <a href="/attendance" className="mx-2 hover:underline">

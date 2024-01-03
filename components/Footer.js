@@ -8,7 +8,7 @@ const Footer = () => {
       <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
         
         <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
-        <Image src={"/logo_im1.png"} alt="d" height={80} width={500} />{" "}
+        <Image src={"/image/main_logo.png"} alt="d" height={80} width={500} />{" "}
         </a>
         <p class="mt-2 text-sm text-white mb-3">FGP, Ratapur Raebareli, Uttar Pradesh</p>
 
@@ -27,73 +27,73 @@ const Footer = () => {
       <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
           <h2 class="title-font font-bold text-white tracking-widest text-xl mb-3">Sections</h2>
-          <div className='bg-orange-500 pt-0.5 w-10'></div>
+          <div className='bg-orange-500 pt-0.5 w-10 md:block hidden'></div>
           <nav class="list-none mb-10 mt-6">
             <li>
-              <a class="textwhite hover:text-gray-800" href='/about'>About</a>
+              <a class="textwhite   hover:text-gray-200" href='/about'>About</a>
             </li>
             <li>
-              <a class="textwhite hover:text-gray-800" href='/admissions'>Admissions</a>
+              <a class="textwhite   hover:text-gray-200" href='/admissions'>Admissions</a>
             </li>
             <li>
-              <a class="textwhite hover:text-gray-800" href='/faculty'>Faculty</a>
+              <a class="textwhite   hover:text-gray-200" href='/faculty'>Faculty</a>
             </li>
             <li>
-              <a class="textwhite hover:text-gray-800" href='/'>College Community</a>
+              <a class="textwhite   hover:text-gray-200" href='/'>College Community</a>
             </li>
           </nav>
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
           <h2 class="title-font font-bold text-white tracking-widest text-xl mb-3">Important Links</h2>
-          <div className='bg-orange-500 pt-0.5 w-10'></div>
+          <div className='bg-orange-500 pt-0.5 w-10 md:block hidden'></div>
           <nav class="list-none mb-10 mt-6">
             <li>
-              <a href='https://bteup.ac.in/' class="textwhite hover:text-gray-800">BTEUP</a>
+              <a href='https://bteup.ac.in/' class="textwhite   hover:text-gray-200">BTEUP</a>
             </li>
             <li>
-              <a href='http://upted.gov.in' class="textwhite hover:text-gray-800">DTEUP</a>
+              <a href='http://upted.gov.in' class="textwhite   hover:text-gray-200">DTEUP</a>
             </li>
             <li>
-              <a href="https://www.aicte-india.org/" class="textwhite hover:text-gray-800">AICTE</a>
+              <a href="https://www.aicte-india.org/" class="textwhite   hover:text-gray-200">AICTE</a>
             </li>
             <li>
-              <a href='https://jeecup.admissions.nic.in/' class="textwhite hover:text-gray-800">JEECUP</a>
+              <a href='https://jeecup.admissions.nic.in/' class="textwhite   hover:text-gray-200">JEECUP</a>
             </li>
           </nav>
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
           <h2 class="title-font font-bold text-white tracking-widest text-xl mb-3">COURSES</h2>
-          <div className='bg-orange-500 pt-0.5 w-10'></div>
+          <div className='bg-orange-500 pt-0.5 w-10 md:block hidden'></div>
           <nav class="list-none mb-10 mt-6">
             <li>
-              <a class="textwhite hover:text-gray-800">First Link</a>
+              <a class="textwhite   hover:text-gray-200">First Link</a>
             </li>
             <li>
-              <a class="textwhite hover:text-gray-800">Second Link</a>
+              <a class="textwhite   hover:text-gray-200">Second Link</a>
             </li>
             <li>
-              <a class="textwhite hover:text-gray-800">Third Link</a>
+              <a class="textwhite   hover:text-gray-200">Third Link</a>
             </li>
             <li>
-              <a class="textwhite hover:text-gray-800">Fourth Link</a>
+              <a class="textwhite   hover:text-gray-200">Fourth Link</a>
             </li>
           </nav>
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
           <h2 class="title-font font-bold text-white tracking-widest text-xl mb-3">Departments</h2>
-          <div className='bg-orange-500 pt-0.5 w-10'></div>
+          <div className='bg-orange-500 pt-0.5 w-10 md:block hidden'></div>
           <nav class="list-none mb-10 mt-6">
             <li>
-              <a class="textwhite hover:text-gray-800">Mechanical Engineering</a>
+              <a class="textwhite   hover:text-gray-200">Mechanical Engineering</a>
             </li>
             <li>
-              <a class="textwhite hover:text-gray-800">Computer Science & Engg.</a>
+              <a class="textwhite   hover:text-gray-200">Computer Science & Engg.</a>
             </li>
             <li>
-              <a class="textwhite hover:text-gray-800">Electronics Engineering</a>
+              <a class="textwhite   hover:text-gray-200">Electronics Engineering</a>
             </li>
             <li>
-              <a class="textwhite hover:text-gray-800">Information Technology</a>
+              <a class="textwhite   hover:text-gray-200">Information Technology</a>
             </li>
           </nav>
         </div>
@@ -101,8 +101,8 @@ const Footer = () => {
     </div>
     <div class="bg-gray-900">
       <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-        <p class="text-white text-sm text-center sm:text-left">© 2023 Feroze Gandhi Polytechnic -
-          <a href="/developers" rel="noopener noreferrer" class="textwhite ml-1">Developed by Zbytes</a>
+        <p class="text-white text-sm text-center sm:text-left">© 2024 Feroze Gandhi Polytechnic -
+          <a href="/developers" rel="noopener noreferrer" class="textwhite ml-1 underline">Developed with ❤️ by BharatGen</a>
         </p>
         <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
           <a class="text-white">
@@ -128,6 +128,12 @@ const Footer = () => {
             </svg>
           </a>
         </span>
+      </div>
+    </div>
+    <div class="bg-gray-900 md:hidden block">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-white text-sm text-center sm:text-left">Privacy Policy | Site Map
+        </p>
       </div>
     </div>
   </footer>

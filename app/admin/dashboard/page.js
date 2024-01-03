@@ -77,7 +77,6 @@ const Dashboard = () => {
     <>
       {ValidUser ? (
         <section>
-          <Navbar />
           <div className="mx-auto container">
             <div className="flex justify-between p-2 items-center">
               <div className="flex">

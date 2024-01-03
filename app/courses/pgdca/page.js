@@ -1,20 +1,17 @@
 "use client";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import React from "react";
 
 const page = () => {
   return (
     <>
-      <Navbar/>
       <section class="text-gray-600 body-font">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image
               class="object-cover object-center rounded"
               alt="hero"
-              src={"/7.png"}
+              src={"/courses/pgdca.png"}
               height={600}
               width={720}
             />
@@ -24,15 +21,7 @@ const page = () => {
              Post Graduate Diploma in Computer Application
             </h1>
             <p class="mb-8 leading-relaxed">
-              Copper mug try-hard pitchfork pour-over freegan heirloom neutraer
-              mug try-hard pitchfork pour-over freegan heirloom neutraer mug
-              try-hard pitchfork pour-over freegan heirloom neutraer mug
-              try-hard pitchfork pour-over freegan heirloom neutraer mug
-              try-hard pitchfork pour-over freegan heirloom neutraer mug
-              try-hard pitchfork pour-over freegan heirloom neutra air plant
-              cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk
-              tote bag selvage hot chicken authentic tumeric truffaut hexagon
-              try-hard chambray.
+            A Post Graduate Diploma in Computer Application (PGDCA) is a comprehensive program catering to advanced studies in computer applications. Designed for graduates, it delves into software development, database management, and system analysis. The curriculum covers programming languages, web development, and network administration. PGDCA students gain hands-on experience in project work, enhancing practical skills. The program focuses on industry-relevant technologies, preparing graduates for roles in software development, IT consulting, and system administration. It provides a solid foundation for those aspiring to pursue a career in the dynamic and evolving field of information technology, fostering expertise and adaptability.
             </p>
             <div class="flex justify-center">
               <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
@@ -45,7 +34,6 @@ const page = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

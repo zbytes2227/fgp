@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
 import "./globals.css";
 import Head from "next/head";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
           easing="ease"
           speed={200}
         />
+        <Navbar/>
         {children}
         <script
           type="text/javascript"

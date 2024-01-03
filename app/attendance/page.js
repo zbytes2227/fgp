@@ -23,7 +23,6 @@ const Page = () => {
 
   return (
     <>
-      <Navbar />
       <div className='container mx-auto flex justify-center'>
         <section className='text-gray-600 body-font'>
           <div className='px-5 py-12'>

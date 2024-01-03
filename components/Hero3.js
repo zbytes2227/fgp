@@ -43,7 +43,7 @@ const Hero3 = () => {
             width={360}
             class="object-cover object-center rounded-xl"
             alt="hero"
-            src="/fg.jpg"
+            src="/image/fg.jpg"
           />
         </div>
       </div>

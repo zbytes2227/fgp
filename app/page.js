@@ -16,7 +16,6 @@ import { Fade } from "react-awesome-reveal";
 export default function Home() {
   return (
     <>
-      <Navbar />
         <Hero />
       <Fade direction="up" triggerOnce="true">
         <MarqueeNews />

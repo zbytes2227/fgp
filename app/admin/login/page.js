@@ -91,7 +91,6 @@ const Login = () => {
 
   return (
     <>
-      <Navbar />
       <section className="h-[100vh] dark:bg-white">
         <ToastContainer />
         <div className="flex flex-col sm:pt-6 items-center mt-5 justify-cnter px-6 mx-auto md:h-screen lg:py-0">
