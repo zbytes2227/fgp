@@ -32,7 +32,7 @@ const page = () => {
 
     <FacultyCard name="Ashish Kumar" post="Lecturer, Mechanical" imgLink="/staff_images/95.jpg"/>
 
-    <FacultyCard name="Mridul Pandey" post="Lecturer, Professional Communication" imgLink="/staff_images/00.jpg"/>
+    <FacultyCard name="Dr. Mridul Pandey" post="Lecturer, Professional Communication" imgLink="/staff_images/mp01.png"/>
 
     <FacultyCard name="Renu Gautam" post="Head of Department, IC" imgLink="/staff_images/69.jpg"/>
 
