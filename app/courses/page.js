@@ -6,13 +6,13 @@ import React from 'react'
 const page = () => {
   return (
    <>
-   <section class="text-gray-600 body-font overflow-hidden">
-  <div class="contai md:px-16 px-6 py-12 mxuto">
-    <div class="flex flex-col text-center w-full mb-8">
-      <h1 class="sm:text-4xl text-3xl font-semibold title-font mb-2 text-gray-900">Courses Offered</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Whatever cardigan tote bag ver cardigan tote bag ver cardigan tote bag tumblr hexagon brooklyn asymmetrical.</p>
+   <section className="text-gray-600 body-font overflow-hidden">
+  <div className="contai md:px-16 px-6 py-12 mxuto">
+    <div className="flex flex-col text-center w-full mb-8">
+      <h1 className="sm:text-4xl text-3xl font-semibold title-font mb-2 text-gray-900">Courses Offered</h1>
+      <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Whatever cardigan tote bag ver cardigan tote bag ver cardigan tote bag tumblr hexagon brooklyn asymmetrical.</p>
     </div>
-    <div class="flex flex-wrap justify-center -m-4">
+    <div className="flex flex-wrap justify-center -m-4">
   
   
     <CoursesCard type="Government" img="/courses/mech.png" name="Mechanical Engineering" more_link="/courses/mechanical"/>

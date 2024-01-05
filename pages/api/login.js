@@ -7,8 +7,8 @@ const handler = async (req, res) => {
 
     if (req.method == 'POST') {
         try {
-            if(req.body.password=="password" && req.body.email=="email"){
-                const token = jwt.sign({ _id: "email" }, "ujjwal", { expiresIn: "6h" });
+            if(req.body.password==process.env.ADMIN_PASSWORD && req.body.email==process.env.ADMIN_USERNAME){
+                const token = jwt.sign({ _id: process.env.ADMIN_USERNAME }, process.env.TOKEN_ADMIN, { expiresIn: "1h" });
                 return res.setHeader('Set-Cookie', serialize('admin_access_token', token, {
                     httpOnly: true,
                     sameSite: "strict",

@@ -10,9 +10,9 @@ const handler = async (req, res) => {
     const token = cookies.admin_access_token;
 
     try {
-      let decoded = await jwt.verify(token, "ujjwal");
+      let decoded = await jwt.verify(token, process.env.TOKEN_ADMIN);
 
-      if (decoded._id !== "email") {
+      if (decoded._id !== process.env.ADMIN_USERNAME) {
         return res.status(400).json({ success: false, msg: "User Not Found" });
       }
       return res.status(200).json({ success: true, msg: "send" });

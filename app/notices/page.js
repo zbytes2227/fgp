@@ -26,21 +26,21 @@ const AllNotices = () => {
   return (
     <>
       <div className="container mx-auto my-5 border border-2">
-        <div class="relative">
-          <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <div className="relative">
+          <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+            <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
               <tr>
-                <th scope="col" class="px-6 py-3">
+                <th scope="col" className="px-6 py-3">
                   All Notices/Events are Listed here.
                 </th>
               </tr>
             </thead>
             <tbody>
               {notices.map((notice) => (
-                <tr key={notice.key} class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <tr key={notice.key} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                   <th
                     scope="row"
-                    class="px-6 py-4 font-medium text-gray-900 dark:text-white"
+                    className="px-6 py-4 font-medium text-gray-900 dark:text-white"
                   >👉{" "}
                     <a href={notice.link} target="_blank" className="underline underline-offset-3 text-blue-700">{notice.title}</a>
                   </th>
@@ -52,7 +52,7 @@ const AllNotices = () => {
           <div role="status" className="flex justify-center m-4">
             <svg
               aria-hidden="true"
-              class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+              className="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
               viewBox="0 0 100 101"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@ const AllNotices = () => {
                 fill="currentFill"
               />
             </svg>
-            <span class="sr-only">Loading...</span>
+            <span className="sr-only">Loading...</span>
           </div>
         )}
         </div>

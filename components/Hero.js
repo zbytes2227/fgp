@@ -80,14 +80,14 @@ const Hero = () => {
             <Image
               height={"1000"}
               width={"1000"}
-              src="/gallery/zb2.jpg"
+              src="/gallery/zbh716.jpeg"
               alt="image 1"
               className="h-full w-full object-cover"
             />
             <Image
               height={"1000"}
               width={"1000"}
-              src="/gallery/zb0404.jpg"
+              src="/gallery/zb356.jpeg"
               alt="image 1"
               className="h-full w-full object-cover"
             />
@@ -95,6 +95,13 @@ const Hero = () => {
               height={"1000"}
               width={"1000"}
               src="/gallery/zb006.jpg"
+              alt="image 1"
+              className="h-full w-full object-cover"
+            />
+              <Image
+              height={"1000"}
+              width={"1000"}
+              src="/gallery/zb2.jpg"
               alt="image 1"
               className="h-full w-full object-cover"
             />

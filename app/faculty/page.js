@@ -5,12 +5,12 @@ import React from 'react'
 const page = () => {
   return (
 <>
-<section class="text-gray-600 body-font">
-  <div class="container px-5 py-12 mx-auto">
-    <div class="flex flex-col text-center w-full mb-20">
-      <h1 class="text-3xl font-semibold title-font text-gray-900 tracking-widest underline">Experienced Faculty</h1>
+<section className="text-gray-600 body-font">
+  <div className="container px-5 py-12 mx-auto">
+    <div className="flex flex-col text-center w-full mb-20">
+      <h1 className="text-3xl font-semibold title-font text-gray-900 tracking-widest underline">Experienced Faculty</h1>
     </div>
-    <div class="flex flex-wrap -m-4 justify-center">
+    <div className="flex flex-wrap -m-4 justify-center">
 
     <FacultyCard name="P.C Katiyar" post="Head of Department, Mechanical Engineering" imgLink="/staff_images/591.jpg"/>
 
@@ -73,8 +73,8 @@ const page = () => {
     <FacultyCard name="Ashish Kumar" post="Lecturer, CSE" imgLink="/staff_images/00.jpg"/>
 
 
-    <div class="flex flex-col text-center w-full my-20">
-      <h1 class="text-3xl font-semibold title-font text-gray-900 tracking-widest underline">Official Staff</h1>
+    <div className="flex flex-col text-center w-full my-20">
+      <h1 className="text-3xl font-semibold title-font text-gray-900 tracking-widest underline">Official Staff</h1>
     </div>
     <FacultyCard name="Rajendra Prasad" post="Clerk" imgLink="/staff_images/00.jpg"/>
     <FacultyCard name="Jitendra Yadav" post="Accountant" imgLink="/staff_images/6.jpg"/>

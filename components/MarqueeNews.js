@@ -32,7 +32,7 @@ const MarqueeNews = () => {
             key={notice.key}
           >
             {" "}
-            <span class="bg-red-100 text-red-800 text-xs font-bold me-2 px-1 rounded dark:bg-red-900 dark:text-red-300">
+            <span className="bg-red-100 text-red-800 text-xs font-bold me-2 px-1 rounded dark:bg-red-900 dark:text-red-300">
               NEW
             </span>
             {notice.title}

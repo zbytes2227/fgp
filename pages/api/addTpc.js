@@ -11,8 +11,8 @@ const handler = async (req, res) => {
 
     const cookies = parse(req.headers.cookie || "");
     const token = cookies.admin_access_token;  
-    let decoded = await jwt.verify(token, "ujjwal");
-    if (!decoded._id=="password") {
+    let decoded = await jwt.verify(token, process.env.TOKEN_ADMIN);
+    if (!decoded._id==process.env.ADMIN_PASSWORD) {
       return res.status(403).json({ success: false, errors: "Unable to Authenticate" });
     }
 

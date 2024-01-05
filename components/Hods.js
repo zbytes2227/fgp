@@ -4,13 +4,13 @@ import CoursesCard from './CoursesCard'
 
 const Hods = () => {
   return (
-<section class="text-gray-600 body-font overflow-hidden" id='temp'>
-  <div class="contai md:px-16 px-6 py-12 mxuto">
-    <div class="flex flex-col text-center w-full mb-8">
-      <h1 class="sm:text-4xl text-3xl font-semibold title-font mb-2 text-gray-900">Courses Offered</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">We offer a variety of technical courses. These courses provide practical knowledge.</p>
+<section className="text-gray-600 body-font overflow-hidden" id='temp'>
+  <div className="contai md:px-16 px-6 py-12 mxuto">
+    <div className="flex flex-col text-center w-full mb-8">
+      <h1 className="sm:text-4xl text-3xl font-semibold title-font mb-2 text-gray-900">Courses Offered</h1>
+      <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">We offer a variety of technical courses. These courses provide practical knowledge.</p>
     </div>
-    <div class="flex flex-wrap justify-center -m-4">
+    <div className="flex flex-wrap justify-center -m-4">
   
 <CoursesCard type="Government" img="/courses/mech.png" name="Mechanical Engineering" more_link="/courses/mechanical"/>
 <CoursesCard type="Government" img="/courses/electronics.png" name="Electronics Engineering" more_link="/courses/electronics"/>

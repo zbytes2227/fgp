@@ -4,7 +4,7 @@ const connectDb = (handler) => async (req, res) => {
   if (mongoose.connections[0].readyState) {
     return handler(req, res);
   }
-  await mongoose.connect("mongodb+srv://fgpadmin:AVXVsohYOuScIlcv@clusterfgp.8y3v8ia.mongodb.net/?retryWrites=true&w=majority");
+  await mongoose.connect(process.env.DB_URL_MD);
   return handler(req, res);
 };
 export default connectDb;

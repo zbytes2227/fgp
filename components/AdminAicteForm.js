@@ -76,15 +76,15 @@ const AdminAicteForm = () => {
   }
 
   return (
-    <div class="max-w-md mx-auto border p-3 rounded-md bg-white shadow-md h-full">
+    <div className="max-w-md mx-auto border p-3 rounded-md bg-white shadow-md h-full">
       <ToastContainer />
       <h4 className="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-inherit mb-2">
         Add New Aicte Notice
       </h4>
-      <div class="mb-5">
+      <div className="mb-5">
         <label
           for="title"
-          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
         >
           Title
         </label>
@@ -93,16 +93,16 @@ const AdminAicteForm = () => {
           id="title"
           value={Title}
           onChange={(e) => setTitle(e.target.value)}
-          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-0"
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-0"
           placeholder="Today is Holiday"
           required
         />
       </div>
       {isLinkVisible && (
-        <div class="mb-5">
+        <div className="mb-5">
           <label
             for="link"
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
           >
             Link
           </label>
@@ -111,25 +111,25 @@ const AdminAicteForm = () => {
             id="link"
             value={Link}
             onChange={(e) => setLink(e.target.value)}
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-0"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-0"
             required
             placeholder="Enter the Link"
           />
         </div>
       )}
-      <div class="flex items-start mb-5">
-        <div class="flex items-center h-5">
+      <div className="flex items-start mb-5">
+        <div className="flex items-center h-5">
           <input
             id="remember"
             onChange={handleCheckboxChange}
             type="checkbox"
             value=""
-            class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+            className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
           />
         </div>
         <label
           for="remember"
-          class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+          className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
         >
           Add Link
         </label>
@@ -139,13 +139,13 @@ const AdminAicteForm = () => {
         onClick={(e) => saveNotice(e)}
         disabled={Loading}
         type="button"
-        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 inline-flex items-center"
+        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 inline-flex items-center"
       >
         {Loading ? (
           <svg
             aria-hidden="true"
             role="status"
-            class="inline w-4 h-4 me-3 text-white animate-spin"
+            className="inline w-4 h-4 me-3 text-white animate-spin"
             viewBox="0 0 100 101"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
