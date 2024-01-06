@@ -74,7 +74,6 @@ const page = () => {
 
     <FacultyCard name="Kiran Yadav" post="Lecturer, Proffessional Communication" imgLink="/staff_images/617.jpg"/>
 
-    <FacultyCard name="Abbas Zafri" post="T&P Assistant" imgLink="/staff_images/00.jpg"/>
 
     <FacultyCard name="Jitendra Kumar" post="Lecturer, Mathematics" imgLink="/staff_images/00.jpg"/>
 
@@ -85,9 +84,13 @@ const page = () => {
     <FacultyCard name="Rajendra Prasad" post="Senior Assistant" imgLink="/staff_images/00.jpg"/>
     <FacultyCard name="Jitendra Yadav" post="Accountant" imgLink="/staff_images/6.jpg"/>
     <FacultyCard name="Vinod Saroj" post="Cashier" imgLink="/staff_images/817.jpg"/>
+    <FacultyCard name="Dinesh Kumar" post="Account Assistant" imgLink="/staff_images/24.jpg"/>
+    <FacultyCard name="Ram Prakash" post="Account Assistant" imgLink="/staff_images/00.jpg"/>
     <FacultyCard name="Vinay Kumar Yadav" post="StonoGrapher" imgLink="/staff_images/00.jpg"/>
     <FacultyCard name="Rakesh Singh" post="Store Clerk" imgLink="/staff_images/15.jpg"/>
     <FacultyCard name="Narootam Singh" post="Library Assistant/Clerk" imgLink="/staff_images/7.jpg"/>
+    <FacultyCard name="Abbas Zafri" post="T&P Assistant" imgLink="/staff_images/00.jpg"/>
+
     </div>
   </div>
 </section>

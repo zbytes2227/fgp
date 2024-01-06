@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <meta property="og:title" content="Feroze Gandhi Polyechnic, Raebareli" />
       <meta property="og:type" content="website" />
       <meta property="og:URL" content="https://www.fgp.org.in" />
-      <meta property="og:image" content="https://i.ibb.co/KKskrqY/favicon-32x32.png" />
+      <meta property="og:image" content="/image/512logo.png" />
       <meta property="og:description" content="Feroze Gandhi Polytechnic (FGP), Raebareli is approved by AICTE, New Delhi. FGP offers diploma courses in various engineering disciplines." />
       </Head>
       <body className={inter.className}>

@@ -37,7 +37,7 @@ const NoticesCard = () => {
       {/* <div className="border border-3"> */}
       <div className="p-1" style={{ maxHeight: "360px", overflowY: "auto" }} id="temp">
         {Loading && (
-          <div role="status" className="flex justify-center">
+          <div role="status" className="flex justify-center m-2">
             <svg
               aria-hidden="true"
               className="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"

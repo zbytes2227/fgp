@@ -1,10 +1,77 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const ContactCard = () => {
+  const [Name, setName] = useState("");
+  const [Email, setEmail] = useState("")
+  const [Message, setMessage] = useState("")
+  const [Loading, setLoading] = useState(false);
+
+  async function submitQuery(e) {
+    try {
+      setLoading(true);
+      e.preventDefault();
+      const fetch_api = await fetch("/api/contactus", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: Name,
+          email: Email,
+          message: Message
+        }),
+      });
+
+      const data = await fetch_api.json();
+      if (data.success) {
+        toast.success(`${data.msg}`, {
+          position: "top-center",
+          autoClose: 1000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+        setEmail('');
+        setMessage('')
+        setName('')
+        setLoading(false);
+      } else {
+        toast.error(`${data.msg}`, {
+          position: "top-center",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+      }
+    } catch (error) {
+      console.log(error);
+      toast.error(`You are offline`, {
+        position: "top-center",
+        autoClose: 3300,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    }
+  }
+
+
   return (
     <>
       <section className="text-gray-600 body-font relative" id="contact-section">
+      <ToastContainer />
         <div className="container px-5 py-12 mx-auto flex sm:flex-nowrap flex-wrap">
           <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
             <iframe
@@ -61,6 +128,8 @@ const ContactCard = () => {
                 type="text"
                 id="name"
                 name="name"
+                value={Name} 
+                onChange={(e) => { setName(e.target.value) }}
                 className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
@@ -72,6 +141,8 @@ const ContactCard = () => {
                 type="email"
                 id="email"
                 name="email"
+                value={Email} 
+                onChange={(e) => { setEmail(e.target.value) }}
                 className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
@@ -81,14 +152,16 @@ const ContactCard = () => {
               </label>
               <textarea
                 id="message"
+                value={Message} 
+                onChange={(e) => { setMessage(e.target.value) }}
                 name="message"
                 className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               ></textarea>
             </div>
-            <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            <button onClick={submitQuery} className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
               Submit
             </button>
-            {/* <p className="text-xs text-gray-500 mt-3">--.</p> */}
+          
           </div>
         </div>
       </section>

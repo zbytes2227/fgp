@@ -67,16 +67,16 @@ const Footer = () => {
           <div className='bg-orange-500 pt-0.5 w-10 md:block hidden'></div>
           <nav className="list-none mb-10 mt-6">
             <li>
-              <a className="textwhite   hover:text-gray-200">Mechanical Engineering</a>
+              <a href='/courses/mechanical' className="textwhite hover:text-gray-200">Mechanical Engineering</a>
             </li>
             <li>
-              <a className="textwhite   hover:text-gray-200">Computer Science & Engg.</a>
+              <a href='/courses/cse' className="textwhite hover:text-gray-200">Computer Science & Engg.</a>
             </li>
             <li>
-              <a className="textwhite   hover:text-gray-200">Electronics Engineering</a>
+              <a href='/courses/electronics' className="textwhite hover:text-gray-200">Electronics Engineering</a>
             </li>
             <li>
-              <a className="textwhite   hover:text-gray-200">Information Technology</a>
+              <a href='/courses/it' className="textwhite hover:text-gray-200">Information Technology</a>
             </li>
           </nav>
         </div>
