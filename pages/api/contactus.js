@@ -7,10 +7,13 @@ const validateEmail = (email) => {
 };
 
 const validateName = (name) => {
-  // Regular expression for validating that the name contains only a-z characters
-  const nameRegex = /^[a-zA-Z]+$/;
-  return nameRegex.test(name);
+  // Regular expression for validating that the name contains only a-z characters (with spaces allowed)
+  const nameRegex = /^[a-zA-Z ]+$/;
+  // Trim the input to remove leading and trailing spaces
+  const trimmedName = name.trim();
+  return nameRegex.test(trimmedName);
 };
+
 
 const handler = async (req, res) => {
   if (req.method === 'POST') {
