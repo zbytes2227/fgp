@@ -26,7 +26,7 @@ const Footer = () => {
 
       <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
         <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 className="title-font font-bold text-white tracking-widest text-xl mb-3">Sections</h2>
+          <h2 className="title-font font-bold text-white tracking-widest text-xl mb-3">SECTIONS</h2>
           <div className='bg-orange-500 pt-0.5 w-10 md:block hidden'></div>
           <nav className="list-none mb-10 mt-6">
             <li>
@@ -39,12 +39,12 @@ const Footer = () => {
               <a className="textwhite   hover:text-gray-200" href='/faculty'>Faculty</a>
             </li>
             <li>
-              <a className="textwhite   hover:text-gray-200" href='/'>College Community</a>
+              <a className="textwhite   hover:text-gray-200" href='/community'>College Community</a>
             </li>
           </nav>
         </div>
         <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 className="title-font font-bold text-white tracking-widest text-xl mb-3">Important Links</h2>
+          <h2 className="title-font font-bold text-white tracking-widest text-xl mb-3">IMP. LINKS</h2>
           <div className='bg-orange-500 pt-0.5 w-10 md:block hidden'></div>
           <nav className="list-none mb-10 mt-6">
             <li>
@@ -61,26 +61,9 @@ const Footer = () => {
             </li>
           </nav>
         </div>
+    
         <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 className="title-font font-bold text-white tracking-widest text-xl mb-3">COURSES</h2>
-          <div className='bg-orange-500 pt-0.5 w-10 md:block hidden'></div>
-          <nav className="list-none mb-10 mt-6">
-            <li>
-              <a className="textwhite   hover:text-gray-200">First Link</a>
-            </li>
-            <li>
-              <a className="textwhite   hover:text-gray-200">Second Link</a>
-            </li>
-            <li>
-              <a className="textwhite   hover:text-gray-200">Third Link</a>
-            </li>
-            <li>
-              <a className="textwhite   hover:text-gray-200">Fourth Link</a>
-            </li>
-          </nav>
-        </div>
-        <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 className="title-font font-bold text-white tracking-widest text-xl mb-3">Departments</h2>
+          <h2 className="title-font font-bold text-white tracking-widest text-xl mb-3">DEPARTMENTS</h2>
           <div className='bg-orange-500 pt-0.5 w-10 md:block hidden'></div>
           <nav className="list-none mb-10 mt-6">
             <li>
@@ -97,8 +80,28 @@ const Footer = () => {
             </li>
           </nav>
         </div>
+
+        <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 className="title-font font-bold text-white tracking-widest text-xl mb-3">OTHERS</h2>
+          <div className='bg-orange-500 pt-0.5 w-10 md:block hidden'></div>
+          <nav className="list-none mb-10 mt-6">
+            <li>
+              <a href='/tpc' className="textwhite hover:text-gray-200">Training & Placement</a>
+            </li>
+            <li>
+              <a href='/gallery' className="textwhite hover:text-gray-200">Gallery</a>
+            </li>
+            <li>
+              <a href='/faculty' className="textwhite hover:text-gray-200">Faculty & Staff</a>
+            </li>
+            <li>
+              <a href='/developers' className="textwhite hover:text-gray-200">Developer Page</a>
+            </li>
+          </nav>
+        </div>
       </div>
     </div>
+
     <div className="bg-gray-900">
       <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
         <p className="text-white text-sm text-center sm:text-left">© 2024 Feroze Gandhi Polytechnic -

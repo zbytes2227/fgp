@@ -12,13 +12,13 @@ const Hero = () => {
       link: "https://en.wikipedia.org/wiki/Ashish_Singh_Patel",
     },
     {
-      name: "Shri M. Devraj",
+      name: "Shri M. Devraj (I.A.S)",
       post: "Principal secretary of Technical Education Uttar Pradesh",
       img: "/special/sp044.jpeg",
       link: "https://in.linkedin.com/in/m-devaraj-bba18716",
     },
     {
-      name: "Shri Kanhaiya Ram",
+      name: "Annavi Dineshkumar (I.A.S)",
       post: "Directorate of Technical Education, Uttar Pradesh",
       img: "/special/sp011.jpg",
       link: "https://in.linkedin.com/in/m-devaraj-bba18716",

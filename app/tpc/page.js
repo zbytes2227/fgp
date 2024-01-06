@@ -54,7 +54,7 @@ const Page = () => {
                   </h2>
                   <div className="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
                   <p className="text-base">
-                    Training & Placement Officer, FPG Raebareli
+                    Training & Placement Officer, FGP Raebareli
                   </p>
                 </div>
               </div>

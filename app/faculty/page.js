@@ -12,17 +12,17 @@ const page = () => {
     </div>
     <div className="flex flex-wrap -m-4 justify-center">
 
-    <FacultyCard name="P.C Katiyar" post="Head of Department, Mechanical Engineering" imgLink="/staff_images/591.jpg"/>
+    <FacultyCard name="P.C. Katiyar" post="Head of Department, Mechanical Engineering" imgLink="/staff_images/591.jpg"/>
 
     <FacultyCard name="Ravindera Solanki" post="Lecturer, Mechanical Engineering" imgLink="/staff_images/8816.jpg"/>
 
-    <FacultyCard name="SK Kannaujia" post="Head of Department, CSE & IT" imgLink="/staff_images/625.jpg"/>
+    <FacultyCard name="S.K. Kannaujia" post="Head of Department, CSE, IT & PGDCA" imgLink="/staff_images/625.jpg"/>
 
-    <FacultyCard name="Avneesh Verma" post="Lecturer, Mechanical Engineering & Hostel Warden" imgLink="/staff_images/00.jpg"/>
+    <FacultyCard name="Avneesh Verma" post="Lecturer, Mechanical Engineering & Hostel Warden" imgLink="/staff_images/715.jpg"/>
     
-    <FacultyCard name="Chandrashekhar Saroj" post="Head of Department, MOM" imgLink="/staff_images/10.jpg"/>
+    <FacultyCard name="Chandrashekhar Saroj" post="Head of Department, MOM & SP" imgLink="/staff_images/10.jpg"/>
     
-    <FacultyCard name="Nitish Upadhyay" post="Head of Department, Electronics" imgLink="/staff_images/972.jpg"/>
+    <FacultyCard name="Nisheeth Upadhyay" post="Head of Department, Electronics" imgLink="/staff_images/972.jpg"/>
 
     <FacultyCard name="Shweta Verma" post="Lecturer, Electronics" imgLink="/staff_images/00.jpg"/>
 
@@ -36,9 +36,9 @@ const page = () => {
 
     <FacultyCard name="Renu Gautam" post="Head of Department, IC" imgLink="/staff_images/69.jpg"/>
 
-    <FacultyCard name="Dr. Nitya Bajpai" post="Head of Department, PGDCA" imgLink="/staff_images/18.jpg"/>
+    <FacultyCard name="Dr. Nitya Bajpai" post="Lecturer, CSE" imgLink="/staff_images/18.jpg"/>
     
-    <FacultyCard name="Ratnesh Sonkar" post="Workshop Superitendant, NCC Officer" imgLink="/staff_images/926.jpg"/>
+    <FacultyCard name="Ratnesh Sonkar" post="Workshop Superitendant, NCC (Leftinent)" imgLink="/staff_images/926.jpg"/>
 
     <FacultyCard name="Ram Chandra" post="Workshop Instructor" imgLink="/staff_images/11.jpg"/>
     
@@ -52,15 +52,15 @@ const page = () => {
     
     <FacultyCard name="Shweta Srivastava" post="Lecturer, CSE" imgLink="/staff_images/19.jpg"/>
     
-    <FacultyCard name="Sonal Aman Verma" post="Lecturer, CSE" imgLink="/staff_images/16.jpg"/>
+    <FacultyCard name="Sonal Aman Verma" post="Programmer" imgLink="/staff_images/16.jpg"/>
 
-    <FacultyCard name="Depanjali Singh" post="Lecturer, CSE" imgLink="/staff_images/21.jpg"/>
+    <FacultyCard name="Deepanjali Singh" post="Lecturer, Physics" imgLink="/staff_images/21.jpg"/>
 
-    <FacultyCard name="Faquea Siddaqui" post="Lecturer, CSE" imgLink="/staff_images/20.jpg"/>
+    <FacultyCard name="Faqeha Siddiqui" post="Lecturer, CSE" imgLink="/staff_images/20.jpg"/>
 
     <FacultyCard name="Sushma Sahu" post="Lecturer, CSE" imgLink="/staff_images/17.jpg"/>
 
-    <FacultyCard name="Anoop Shukla" post="Lecturer, Electronics" imgLink="/staff_images/00.jpg"/>
+    <FacultyCard name="Anoop Shukla" post="Lecturer, Electronics" imgLink="/staff_images/716.jpg"/>
 
     <FacultyCard name="Deep Kumar Soni" post="Lecturer, CSE" imgLink="/staff_images/14.jpg"/>
 
@@ -68,20 +68,26 @@ const page = () => {
 
     <FacultyCard name="Sandeep Kumar" post="Lecturer, IC" imgLink="/staff_images/00.jpg"/>
     
-    <FacultyCard name="Ashish Kumar" post="Lecturer, CSE" imgLink="/staff_images/23.jpg"/>
+    <FacultyCard name="Sandhya Diwedi" post="Lecturer, Chemistry" imgLink="/staff_images/00.jpg"/>
+    
+    <FacultyCard name="Ashish Kumar" post="Programmer" imgLink="/staff_images/23.jpg"/>
 
-    <FacultyCard name="Ashish Kumar" post="Lecturer, CSE" imgLink="/staff_images/00.jpg"/>
+    <FacultyCard name="Kiran Yadav" post="Lecturer, CSE" imgLink="/staff_images/617.jpg"/>
+
+    <FacultyCard name="Abbas Zafri" post="T & P" imgLink="/staff_images/00.jpg"/>
+
+    <FacultyCard name="Jitendra Kumar" post="Lecturer, Mathematics" imgLink="/staff_images/00.jpg"/>
 
 
     <div className="flex flex-col text-center w-full my-20">
       <h1 className="text-3xl font-semibold title-font text-gray-900 tracking-widest underline">Official Staff</h1>
     </div>
-    <FacultyCard name="Rajendra Prasad" post="Clerk" imgLink="/staff_images/00.jpg"/>
+    <FacultyCard name="Rajendra Prasad" post="Senior Assistant" imgLink="/staff_images/00.jpg"/>
     <FacultyCard name="Jitendra Yadav" post="Accountant" imgLink="/staff_images/6.jpg"/>
-    <FacultyCard name="Vinod Saroj" post="Cashier" imgLink="/staff_images/00.jpg"/>
+    <FacultyCard name="Vinod Saroj" post="Cashier" imgLink="/staff_images/817.jpg"/>
     <FacultyCard name="Vinay Kumar Yadav" post="StonoGrapher" imgLink="/staff_images/00.jpg"/>
-    <FacultyCard name="Rakesh Singh" post="Store Manager" imgLink="/staff_images/15.jpg"/>
-    <FacultyCard name="Narvottam Singh" post="Librarian" imgLink="/staff_images/7.jpg"/>
+    <FacultyCard name="Rakesh Singh" post="Store Clerk" imgLink="/staff_images/15.jpg"/>
+    <FacultyCard name="Narootam Singh" post="Library Assistant/Clerk" imgLink="/staff_images/7.jpg"/>
     </div>
   </div>
 </section>

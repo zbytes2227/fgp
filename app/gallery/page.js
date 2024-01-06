@@ -226,8 +226,8 @@ const page = () => {
             transition={{ duration: 1 }}
           >
             <img
-              alt="/gallery/zb61.jpg"
-              src="/gallery/zb76.jpeg"
+              src="/gallery/782.jpeg"
+              alt=""
               className="h-full w-full object-cover"
             />
             <img

@@ -40,7 +40,7 @@ const ContactCard = () => {
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
                   PHONE
                 </h2>
-                <p className="leading-relaxed">+0535-2211269</p>
+                <p className="leading-relaxed">+05352974200</p>
 
               </div>
             </div>
@@ -88,7 +88,7 @@ const ContactCard = () => {
             <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
               Submit
             </button>
-            <p className="text-xs text-gray-500 mt-3">--.</p>
+            {/* <p className="text-xs text-gray-500 mt-3">--.</p> */}
           </div>
         </div>
       </section>
