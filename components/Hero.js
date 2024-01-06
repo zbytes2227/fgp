@@ -7,7 +7,7 @@ const Hero = () => {
   const data = [
     {
       name: "Shri Ashish Patel",
-      post: "Honble Minister of Technical Education, UP",
+      post: "Hon'ble Minister of Technical Education, UP",
       img: "/special/sp055.png",
       link: "https://en.wikipedia.org/wiki/Ashish_Singh_Patel",
     },
@@ -18,8 +18,8 @@ const Hero = () => {
       link: "https://in.linkedin.com/in/m-devaraj-bba18716",
     },
     {
-      name: "Annavi Dineshkumar (I.A.S)",
-      post: "Directorate of Technical Education, Uttar Pradesh",
+      name: "Annavi Dinesh Kumar (I.A.S)",
+      post: "Director of Technical Education, Uttar Pradesh",
       img: "/special/sp011.jpg",
       link: "https://in.linkedin.com/in/m-devaraj-bba18716",
     },
@@ -128,13 +128,13 @@ const Hero = () => {
         >
           <SpecialProfileBox
             name="Smt. Anandiben Patel"
-            post="Honble Chancellor & H.E. Governor of Uttar Pradesh"
+            post="Hon'ble Chancellor & H.E. Governor of Uttar Pradesh"
             img="/special/sp033.jpg"
             link="https://en.wikipedia.org/wiki/Anandiben_Patel"
           />
           <SpecialProfileBox
             name="Shri Yogi Adityanath"
-            post="Honble CM of Uttar Pradesh"
+            post="Hon'ble CM of Uttar Pradesh"
             img="/special/sp022.png"
             link="https://en.wikipedia.org/wiki/Yogi_Adityanath"
           />
