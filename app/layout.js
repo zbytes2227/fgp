@@ -17,6 +17,7 @@ export default function RootLayout({ children }) {
       <head>
       <link rel="icon" href="/image/favicon.ico"/>
       <link rel="manifest" href="/manifest.json"/>
+      <meta name="theme-color" content="#0088ff" />
       <meta property="og:title" content="Feroze Gandhi Polyechnic, Raebareli" />
       <meta property="og:type" content="website" />
       <meta property="og:URL" content="https://www.fgp.org.in" />
