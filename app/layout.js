@@ -14,10 +14,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
       <link rel="icon" href="/image/favicon.ico"/>
       <link rel="manifest" href="/manifest.json"/>
-  
       <meta property="og:title" content="Feroze Gandhi Polyechnic, Raebareli" />
       <meta property="og:type" content="website" />
       <meta property="og:URL" content="https://www.fgp.org.in" />
@@ -25,7 +24,7 @@ export default function RootLayout({ children }) {
       <meta name="keywords" content="Feroze Gandhi Polytechnic, FGP raebareli, Feroze Gandhi, FGP RBL, fgp raebareli, feroze gandhi polytechnic"/>
       <meta property="og:description" content="Feroze Gandhi Polytechnic (FGP), Raebareli is approved by AICTE, New Delhi. FGP offers diploma courses in various engineering disciplines." />
       <meta name="robots" content="index, follow"/>
-      </Head>
+      </head>
       <body className={inter.className}>
         <NextTopLoader
           color="#0088ff"
