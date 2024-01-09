@@ -33,9 +33,12 @@ const handler = async (req, res) => {
       }
 
       // Validate message length
-      if (MESSAGE.length > 550) {
+      if (MESSAGE.length < 5) {
+        return res.status(400).json({ success: false, msg: "Message is too short (minimum 5 characters)" });
+      } else if (MESSAGE.length > 550) {
         return res.status(400).json({ success: false, msg: "Message is too long (maximum 550 characters)" });
       }
+      
 
       // If all validations pass, proceed with the rest of your logic
       // console.log(NAME, EMAIL, MESSAGE);
