@@ -3,6 +3,13 @@ import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import React from 'react'
 
+
+export const metadata = {
+  title: "Courses Offered | FGP, Raebareli",
+  description: "FGP Raebareli Offers many Diploma courses for practical and technical knowledge.",
+};
+
+
 const page = () => {
   return (
    <>
@@ -10,7 +17,7 @@ const page = () => {
   <div className="contai md:px-16 px-6 py-12 mxuto">
     <div className="flex flex-col text-center w-full mb-8">
       <h1 className="sm:text-4xl text-3xl font-semibold title-font mb-2 text-gray-900">Courses Offered</h1>
-      <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Whatever cardigan tote bag ver cardigan tote bag ver cardigan tote bag tumblr hexagon brooklyn asymmetrical.</p>
+      <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">FGP Raebareli Offers many Diploma courses for practical and technical knowledge.</p>
     </div>
     <div className="flex flex-wrap justify-center -m-4">
   

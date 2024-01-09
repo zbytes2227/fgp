@@ -3,6 +3,11 @@ import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import React from 'react'
 
+export const metadata = {
+  title: "Admissions | FGP, Raebareli",
+  description: "The Entrance Examination for admission to First Year of Three Year Diploma programme offered by Joint Entrance Examination Council.",
+};
+
 const page = () => {
   return (
    <>

@@ -3,6 +3,11 @@ import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 import React from 'react'
 
+export const metadata = {
+  title: "Code Crafters | FGP, Raebareli",
+  description: "Code Crafters is a community of students from Feroze Gandhi Polytechnic College, dedicated to the development of high-end coding projects. ",
+};
+
 const page = () => {
   return (
     <>
