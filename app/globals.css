@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.artibot-launcher--dBP9o svg {
+    display: inline;
+}
+
+#temp{
+    background-image: url("https://reck.ac.in/wp-content/uploads/2023/05/Pattern-Transparent-Background-min-1.png");
+}
+
+.colo{
+    background-color: rgb(225 29 72);
+    background-image: url("https://reck.ac.in/wp-content/uploads/2023/05/Pattern-Transparent-Background-min-1.png");
+}
+
+
+
+/* SCROLL BAR */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #1338a8;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0a267b;
+  }
