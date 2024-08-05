@@ -41,7 +41,7 @@ const handler = async (req, res) => {
           const jwtClient = new google.auth.JWT(
             process.env.PDF_CLIENT_EMAIL,
             null,
-            process.env.PDF_PRIVATE_KEY,
+            process.env.PDF_PRIVATE_KEY.split(String.raw`\n`).join('\n'),
             ['https://www.googleapis.com/auth/drive']
           );
           await jwtClient.authorize();
