@@ -9,7 +9,7 @@ const ContactCard = () => {
   const [Email, setEmail] = useState("")
   const [Message, setMessage] = useState("")
   const [Loading, setLoading] = useState(false);
-
+ 
   async function submitQuery(e) {
     try {
       setLoading(true);
